@@ -2,9 +2,12 @@
     color:red;
 }
 
+h1 {
+  background-color: green;
+}
+
 .title {
   font-weight:bold
-  background-color: green;
 }
 
 *{
