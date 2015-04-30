@@ -3,6 +3,7 @@
 }
 
 h1 {
+  display: block;
   background-color: #33bebe;
   width: 60%;
   text-align: center;
