@@ -2,10 +2,6 @@
     color:grey;
 }
 
-.moabPhoto {
-  margin=10%;
-}
-
 h1 {
   display: block;
   background-color: #33bebe;
@@ -29,6 +25,7 @@ h1 {
 
 .content {
   display: flex;
+  margin: 10px;
 }
 
 body {
