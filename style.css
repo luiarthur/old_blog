@@ -4,13 +4,14 @@
 
 h1 {
   background-color: #33bebe;
+  width: 80%;
 }
 
 .title {
   font-weight:bold
 }
 
-*{
+*{ /* this is useful for resizing the screen */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
