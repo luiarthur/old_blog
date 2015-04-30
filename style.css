@@ -13,7 +13,7 @@
           box-sizing: border-box;
 }
 
-content.style {
+.content {
   display: flex;
 }
 
