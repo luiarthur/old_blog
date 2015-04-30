@@ -1,5 +1,5 @@
 .description {
-    color:red;
+    color:grey;
 }
 
 h1 {
@@ -8,9 +8,10 @@ h1 {
   width: 60%;
   text-align: center;
   padding: 20px;
+  margin:0;
 }
 
-.title {
+.banner {
   font-weight:bold
 }
 
@@ -22,7 +23,7 @@ h1 {
 }
 
 .content {
-  /*display: flex;*/
+  display: flex;
 }
 
 /*
