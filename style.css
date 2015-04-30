@@ -26,6 +26,6 @@ h1 {
 }
 
 body {
-  margin:0;
-  width: 60%;
+  max-width: 948px;
+  margin: auto;
 }
