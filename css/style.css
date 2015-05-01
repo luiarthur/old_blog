@@ -19,18 +19,28 @@
   font-family: 'Slabo 27px', serif;
 }
 
-h1 {
+@media (min-width: 768px) .banner3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.banner {
   display: block;
-  background-color: #33bebe;
-  text-align: center;
+  /*background-color: #33bebe;*/
+  background-color: #b84d45;
+  background-image: url(../images/bg.png);
+  text-align: left;
   padding: 20px;
   margin:0;
   font-family: Helvetica;
   color: white;
+  font-weight:bold;
 }
 
-.banner {
-  font-weight:bold
+.banner p{
+  color:rgba(255,255,255,.8);
 }
 
 *{ /* this is useful for resizing the screen */
@@ -40,9 +50,17 @@ h1 {
    box-sizing: border-box;
 }
 
-.content {
-  display: flex;
-  margin: 10px;
+div.content h1{
+  color:grey;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: Helvetica;*/
+}
+
+p {
+  font-family: 'Slabo 27px', serif;
 }
 
 body {
