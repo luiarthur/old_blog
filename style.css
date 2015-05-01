@@ -1,7 +1,22 @@
+/* 
+ * check out normalize.css on github
+ * it's used to ensure that your styles
+ * can be used across all browsers
+ * plcaehold.it is used for place holding images of any dimension
+ */
+
+@media only screen and (max-width: 1000px){
+  div {
+    /*when screen is less than 1000px, change bg color to blue.*/
+    /*background-color:blue;*/ 
+  }
+}
+
 .description {
   color:grey;
   margin-left: 10px;
   box-sizing: border-box;
+  font-family: 'Slabo 27px', serif;
 }
 
 h1 {
@@ -36,9 +51,11 @@ body {
 }
 
 /* column classes*/
-/*
 .row {
+  display:flex;
   width:100%;
+  border: 1px solid red !important;
+  padding: 10px;
 }
 .col1 {
   width:8.33%;
@@ -76,4 +93,10 @@ body {
 .col12 {
   width:100%;
 }
-*/
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
