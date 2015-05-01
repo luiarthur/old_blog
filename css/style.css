@@ -41,6 +41,8 @@
 
 .banner p{
   color:rgba(255,255,255,.8);
+  font-size: larger;
+  padding-top: 20px;
 }
 
 div.banner h1,p {
