@@ -68,12 +68,17 @@ div.content,.cat {
 
 
 h1 {
+  margin-top:40px;
+  margin-bottom:40px;
   font-family: 'Open Sans', sans-serif;
   /*font-family: Helvetica;*/
 }
 
 p {
   font-family: 'Slabo 27px', serif;
+  font-size: 24px;
+  margin-top:40px;
+  margin-bottom:40px;
 }
 
 
