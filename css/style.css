@@ -32,7 +32,7 @@
   background-color: #b84d45;
   background-image: url(../images/bg.png);
   text-align: left;
-  padding: 20px;
+  padding: 60px;
   margin:0;
   font-family: Helvetica;
   color: white;
@@ -43,16 +43,27 @@
   color:rgba(255,255,255,.8);
 }
 
+div.banner h1,p {
+  max-width: 948px;
+  margin: auto;
+}
+
 *{ /* this is useful for resizing the screen */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 div.content h1{
   color:grey;
 }
+
+div.content,.cat {
+  max-width: 948px;
+  margin: auto;
+}
+
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -63,10 +74,6 @@ p {
   font-family: 'Slabo 27px', serif;
 }
 
-body {
-  max-width: 948px;
-  margin: auto;
-}
 
 /* column classes*/
 .row {
