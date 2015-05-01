@@ -58,7 +58,7 @@ div.banner h1,p {
   box-sizing: border-box;
 }
 
-div.content h1{
+div.content h1,h2{
   color:grey;
 }
 
@@ -74,6 +74,15 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   /*font-family: Helvetica;*/
 }
+
+h2 {
+  margin-top:40px;
+  margin-bottom:40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  /*font-family: Helvetica;*/
+}
+
 
 p {
   font-family: 'Slabo 27px', serif;
