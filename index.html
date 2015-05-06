@@ -1,74 +1,86 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+<!-- developer.mozilla.org/en-US/docs/Web/CSS/Reference-->
+<!DOCTYPE html> 
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> <!-- import fonts from google fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
 
-.counties {
-  fill: none;
-}
-
-.states {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
-}
-
-.q0-9 { fill:rgb(247,251,255); }
-.q1-9 { fill:rgb(222,235,247); }
-.q2-9 { fill:rgb(198,219,239); }
-.q3-9 { fill:rgb(158,202,225); }
-.q4-9 { fill:rgb(107,174,214); }
-.q5-9 { fill:rgb(66,146,198); }
-.q6-9 { fill:rgb(33,113,181); }
-.q7-9 { fill:rgb(8,81,156); }
-.q8-9 { fill:rgb(8,48,107); }
-
-</style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script>
+  <div class="banner">
+    <h1> The Search for My Statistical Programming Language </h1>
+    <p>
+      R / C++ / C / Scala / Go / Julia / Python
+    </p>
+  </div>
 
-var width = 960,
-    height = 600;
+  <div class="content">
+    <h1>Learning New Languages can be Fun and Frustraing</h1>
+    <p>
+      As soon as school was out, I set out on a serach for more attactive
+      interfaces and faster programming languages.  As a statistics student, I
+      have used R a lot! And while R is easy to get around, I have learned that
+      R has limitations (my concerns were mostly related to speed and memory).
+      There is, of course, a trade off. For instance, when I was doing research
+      on the Indian Buffet Process (IBP), a distribution used in Bayesian
+      nonparametrics, I couldn't obtain a large number of draws quickly. But
+      the algorithm was easy to code up. Still, obtaining a million draws was
+      not gonna happen in R... 
+    </p> 
+    <p>
+      You can do tons in R!  And R is really made to
+      be a statistical package. So, I'm not going to stop using it. But, I need
+      other tools to do things like getting a million draws from the IBP
+      quickly too.
+    </p>
+    <p>
+      So I began my search. I implemented a Bayesian multiple linear regression
+      in R, timed it, then rewrote the code in several other languages. I
+      merely tried in some languages, because it was just too difficult to
+      write code in bayesian code in them... I implemented a bayesian algorithm
+      because my interests are of a Bayesian nature. If you are Bayesian, and
+      also searching for a language, I hope you may benefit from the coding
+      examples.  Otherwise, why look here, you can probably go to <a
+      href="http://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=scala&lang2=gpp"
+      target="_blank">computer language benchmark games </a> or something to
+      compare languages...
+    </p>
+    <p>
+      I compared the following languages because I had heard about them and thought some features
+      were attractive, or because I was somewhat exposed to them. I'll dive into details later. But
+      for now, here we go! 
+    </p>
 
-var rateById = d3.map();
+    <h1> Language Comparisons </h1>
+    <h2>R</h2>
+    <p>
+    </p>
+    <h2>C++</h2>
+    <p>
+    </p>
+    <h2>C</h2>
+    <p>
+    </p>
+    <h2>Scala</h2>
+    <p>
+    </p>
+    <h2>Go</h2>
+    <p>
+    </p>
+    <h2>Julia</h2>
+    <p>
+    </p>
+  </div>
 
-var quantize = d3.scale.quantize()
-    .domain([0, .15])
-    .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
+  <div class="cat"> 
+  <img src="http://placekitten.com/948/300" class="img-responsive"> 
+  </div>
 
-var projection = d3.geo.albersUsa()
-    .scale(1280)
-    .translate([width / 2, height / 2]);
+</body>
+</html>
 
-var path = d3.geo.path()
-    .projection(projection);
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-queue()
-    .defer(d3.json, "/mbostock/raw/4090846/us.json")
-    .defer(d3.tsv, "unemployment.tsv", function(d) { rateById.set(d.id, +d.rate); })
-    .await(ready);
-
-function ready(error, us) {
-  svg.append("g")
-      .attr("class", "counties")
-    .selectAll("path")
-      .data(topojson.feature(us, us.objects.counties).features)
-    .enter().append("path")
-      .attr("class", function(d) { return quantize(rateById.get(d.id)); })
-      .attr("d", path);
-
-  svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-      .attr("class", "states")
-      .attr("d", path);
-}
-
-d3.select(self.frameElement).style("height", height + "px");
-
-</script>
