@@ -70,7 +70,7 @@
     /* Hard coded bounds: x,y-lim
     x.domain([0,100]); y.domain([0,100]);
     */
-    x.domain(d3.extent(data, function(d) { return +d.x; }));
+    x.domain(d3.extent(data, function(d) { return +d["<myXname>"]; }));
     y.domain([
       d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
       d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
