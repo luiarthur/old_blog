@@ -86,7 +86,7 @@
     /*Add curves*/
     var curve = svg.selectAll(".city").data(curves).enter().append("g").attr("class", "city");
     curve.append("path").attr("class", "line").attr("d", function(d) { return myline(d.values); })
-         .style("stroke", grey/*function(d) { return color(d.name); }*/);
+         /*.style("stroke", function(d) { return color(d.name); })*/;
 
     /*Add names of cities to curves*/
     curve.append("text")
