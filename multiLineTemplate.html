@@ -96,6 +96,12 @@
 
 
     /* mouseover stuff below*/
+    var focus = svg.append("g")
+        .attr("transform", "translate(-100,-100)")
+        .attr("class", "focus")
+        .append("circle").attr("r", 3.5)
+        .append("text").attr("y", -10);
+
     curve.style("opacity",".3").on("mouseover",mouseover).on("mouseout",mouseout);
       function mouseover(d, i) {
            d3.select(this).style("stroke","red").style("opacity", "1");
