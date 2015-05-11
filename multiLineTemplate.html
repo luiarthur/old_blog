@@ -28,10 +28,10 @@
   }
 </style>
 
+<script src="http://d3js.org/d3.v3.js"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <body>
-  <script src="http://d3js.org/d3.v3.js"></script>
-  <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script>
   /*Page Setup*/
   var margin = {top: 20, right: 80, bottom: 30, left: 50},
@@ -56,7 +56,6 @@
   /* Read in Data and Plot */
   /*d3.tsv("sim.tsv", function(data) {*/
   d3.tsv("<myDataPath>", function(data) {
-    debugger;
     /* maps colors to each city */
       /* d3.keys(data[0]) gets the column headers*/
       /* d3.keys(data[0]).filter(etc) gets all all the column headers except the first one, "date"*/
@@ -99,6 +98,7 @@
       function mouseover(d, i) { d3.select(this).style("opacity",  "1"); };
       function mouseout(d, i)  { d3.select(this).style("opacity", ".3"); };
     /*End of Mouseover stuff*/
+    debugger;
 
   });
 </script>
