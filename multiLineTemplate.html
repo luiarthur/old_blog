@@ -32,6 +32,7 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <body>
+  <!--MyMAIN-->
   <script>
   /*Page Setup*/
   var margin = {top: 20, right: 80, bottom: 30, left: 50},
@@ -71,11 +72,17 @@
     /* Hard coded bounds: x,y-lim
     x.domain([0,100]); y.domain([0,100]);
     */
+
+    /*dynamic x,y-lim
     x.domain(d3.extent(data, function(d) { return +d["<myXname>"]; }));
     y.domain([
       d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
       d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
     ]);
+    */
+    /* x,y-lim set using R */
+    x.domain([<myXLimLower>,<myXLimUpper>]);
+    y.domain([<myYLimLower>,<myYLimUpper>]);
 
     /*debugger;*/
     /*Add x,y-axis*/
