@@ -83,7 +83,7 @@
     svg.append("g").attr("class","y axis").attr("transform","translate("+0+",0)").call(yAxis);
 
     /*Add curves*/
-    var curve = svg.selectAll(".city").data(curves).enter().append("g").attr("class", "city");
+    var curve = svg.selectAll(".curve").data(curves).enter().append("g").attr("class", "curve");
     curve.append("path").attr("class", "line").attr("d", function(d) { return myline(d.values); })
          /*.style("stroke", function(d) { return color(d.name); })*/;
 
