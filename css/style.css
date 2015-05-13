@@ -63,7 +63,8 @@ div.content h1,h2{
 }
 
 div.content,.cat {
-  max-width: 948px;
+  /*max-width: 948px;*/
+  max-width: 700px;
   margin: auto;
 }
 
