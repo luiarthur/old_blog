@@ -121,13 +121,15 @@
 
     <div id="includeScripts"></div>
 
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
     <!-- HTML File Inclusions-->
     <script> 
-    $(function(){
-      $("#includeFooter").load("/chunks/myFooter.html"); 
-      $("#includeStyles").load("/chunks/myStyles.html"); 
-      $("#includeScripts").load("/chunks/myScripts.html"); 
-    });
+     $(function(){
+       $("#includeFooter").load("/chunks/myFooter.html"); 
+       $("#includeStyles").load("/chunks/myStyles.html"); 
+       $("#includeScripts").load("/chunks/myScripts.html"); 
+     });
     </script> 
 
 </body>
