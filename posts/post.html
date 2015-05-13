@@ -35,6 +35,14 @@
        $("#includeNav").load("/chunks/myNav.html"); 
      });
     </script> 
+
+    <!--MathJax-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 </head>
 
 
@@ -65,7 +73,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>bla.</p>
+                    <p>Having used R for 3 years in college, I've gotten to know
+                    the limits and conveniences of R. As a statistical package,
+                    with a large support community it serves its purpose well.
+                    However, at times, especially when doing more computation-heavy
+                    analysis, R slows down, and reaches memory limits. Hence, I've
+                    been looking around for a language that is reasonalbly fast,
+                    and quick to develop. I checked out C, C++, Go, Scala, and
+                    Julia. And since my computational work is usually Bayesian,
+                    I created my own criteria for judging performance - a standard
+                    Bayesian multiple linear regression algorithm.
+                    $$(X'X)^{-1}X'Y$$
+                    </p>
+                    <!--<h2 class="section-heading">The Final Frontier</h2>-->
                     <p>bla.</p>
                     <p>bla.</p>
                     <!--<h2 class="section-heading">The Final Frontier</h2>-->
