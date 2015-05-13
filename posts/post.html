@@ -16,16 +16,25 @@
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+
+    <!--Inline Disqussion Chunks. Requires & must be AFTER jQuery. -->
+    <script src="/js/inlineDisqussions.js"></script>
+    <script src="/js/callInlineDisqussions.js"></script>
+
+
     <!-- HTML File Inclusions-->
     <script> 
      $(function(){
        $("#includeFooter").load("/chunks/myFooter.html"); 
-       $("#includeStyles").load("/chunks/myStyles.html"); 
-       $("#includeScripts").load("/chunks/myScripts.html"); 
+       $("#includeScripts").load("/chunks/myStyles.html"); 
      });
     </script> 
 
-    <div id="includeScripts"></div>
 </head>
 
 <body>
