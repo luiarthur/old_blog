@@ -11,7 +11,7 @@
 
     <title>Clean Blog - Sample Post</title>
 
-    <!--#include virtual="/chunks/myStyles.shtml"-->
+    <div id="includeStyles"></div>
 </head>
 
 <body>
@@ -133,7 +133,12 @@
     <script src="/js/callInlineDisqussions.js"></script>
 
     <!-- HTML File Inclusions-->
-    <script> $(function(){ $("#includeFooter").load("/chunks/myFooter.html"); }); </script> 
+    <script> 
+    $(function(){
+      $("#includeFooter").load("/chunks/myFooter.html"); 
+      $("#includeStyles").load("/chunks/myStyles.html"); 
+    });
+    </script> 
 
 </body>
 
