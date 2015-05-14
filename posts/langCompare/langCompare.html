@@ -108,16 +108,15 @@
                     <hr>
 
                     <!--Include Code-->
-                    <!--
+                    <button onclick="rcode">R</button>
+                    <button onclick="jcode">Julia</button>
+                    <button onclick="scode">Scala</button>
+                    <button onclick="ccode">C++</button>
                     <div id="includeRCode"></div>
                     <div id="includeCppCode"></div>
                     <div id="includeScalaCode"></div>
                     <div id="includeJuliaCode"></div>
-                    -->
-                    <button class="btn btn-default" type="submit">rButton</button>
-                    <button class="btn btn-default" type="submit">jButton</button>
-                    <button class="btn btn-default" type="submit">sButton</button>
-                    <button class="btn btn-default" type="submit">cButton</button>
+
                     <!-- Pager -->
                     <ul class="pager">
                         <li class="previous">
@@ -135,6 +134,7 @@
     <footer>
       <div id="includeFooter"></div>
     </footer>
+    <!--
     <script> 
      $(function(){
        $("#includeRCode").load("/posts/langCompare/Code/R.html"); 
@@ -142,13 +142,9 @@
        $("#includeScalaCode").load("/posts/langCompare/Code/scala.html"); 
        $("#includeJuliaCode").load("/posts/langCompare/Code/julia.html"); 
      });
+    -->
     </script> 
-    <script>
-     $("rButton").click(function(){$("#includeRCode").load("/posts/langCompare/Code/R.html");});
-     $("cButton").click(function(){$("#includeCppCode").load("/posts/langCompare/Code/cpp.html");});
-     $("sButton").click(function(){$("#includeScalaCode").load("/posts/langCompare/Code/scala.html");});
-     $("jButton").click(function(){$("#includeJuliaCode").load("/posts/langCompare/Code/julia.html");});
-    </script>
+    <script> function showRcode(){$("#includeRCode").load("/posts/langCompare/Code/R.html");}); </script>
 </body>
 
 </html>
