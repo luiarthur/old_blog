@@ -106,11 +106,18 @@
                     </a>
                     <span class="caption text-muted">Note the tradeoff.</span>
                     <hr>
+
                     <!--Include Code-->
+                    <!--
                     <div id="includeRCode"></div>
                     <div id="includeCppCode"></div>
                     <div id="includeScalaCode"></div>
                     <div id="includeJuliaCode"></div>
+                    -->
+                    <button class="btn btn-default" type="submit">rButton</button>
+                    <button class="btn btn-default" type="submit">jButton</button>
+                    <button class="btn btn-default" type="submit">sButton</button>
+                    <button class="btn btn-default" type="submit">cButton</button>
                     <!-- Pager -->
                     <ul class="pager">
                         <li class="previous">
@@ -136,6 +143,12 @@
        $("#includeJuliaCode").load("/posts/langCompare/Code/julia.html"); 
      });
     </script> 
+    <script>
+     $("rButton").click((function()){$("#includeRCode").load("/posts/langCompare/Code/R.html");}
+     $("cButton").click((function()){$("#includeCppCode").load("/posts/langCompare/Code/cpp.html");}
+     $("sButton").click((function()){$("#includeScalaCode").load("/posts/langCompare/Code/scala.html");}
+     $("jButton").click((function()){$("#includeJuliaCode").load("/posts/langCompare/Code/julia.html");}
+    </script>
 </body>
 
 </html>
