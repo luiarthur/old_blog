@@ -108,10 +108,10 @@
                     <hr>
 
                     <!--Include Code-->
-                    <button name="rbtn">R</button>
-                    <button name="jbtn">Julia</button>
-                    <button name="sbtn">Scala</button>
-                    <button name="cbtn">C++</button>
+                    <button class="r">R</button>
+                    <button class="j">Julia</button>
+                    <button class="s">Scala</button>
+                    <button class="c">C++</button>
                     <div id="includeChosenCode"></div>
 
                     <!-- Pager -->
@@ -132,7 +132,7 @@
       <div id="includeFooter"></div>
     </footer>
 
-    <script> $(document).ready(function(){$("rbtn").click(function(){$("#includeChosenCode").load("/posts/langCompare/Code/R.html");});});</script>
+    <script> $(document).ready(function(){$("button.r").click(function(){$("#includeChosenCode").load("/posts/langCompare/Code/R.html");});});</script>
 </body>
 
 </html>
