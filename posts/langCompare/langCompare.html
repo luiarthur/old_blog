@@ -108,10 +108,11 @@
                     <hr>
 
                     <!--Include Code-->
-                    <button onclick="rcode">R</button>
-                    <button onclick="jcode">Julia</button>
-                    <button onclick="scode">Scala</button>
-                    <button onclick="ccode">C++</button>
+                    <button value="rcode">R</button>
+                    <button value="jcode">Julia</button>
+                    <button value="scode">Scala</button>
+                    <button value="ccode">C++</button>
+                    <div id="includeChosenCode"></div>
                     <div id="includeRCode"></div>
                     <div id="includeCppCode"></div>
                     <div id="includeScalaCode"></div>
@@ -142,9 +143,9 @@
        $("#includeScalaCode").load("/posts/langCompare/Code/scala.html"); 
        $("#includeJuliaCode").load("/posts/langCompare/Code/julia.html"); 
      });
-    -->
     </script> 
-    <script> function showRcode(){$("#includeRCode").load("/posts/langCompare/Code/R.html");}; </script>
+    -->
+    <script> $(document).ready(function(){$("rcode").click(function(){$("#includeChosenCode").load("/posts/langCompare/Code/R.html");});});</script>
 </body>
 
 </html>
