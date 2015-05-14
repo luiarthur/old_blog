@@ -108,15 +108,11 @@
                     <hr>
 
                     <!--Include Code-->
-                    <button value="rcode">R</button>
-                    <button value="jcode">Julia</button>
-                    <button value="scode">Scala</button>
-                    <button value="ccode">C++</button>
+                    <button>R</button>
+                    <button>Julia</button>
+                    <button>Scala</button>
+                    <button>C++</button>
                     <div id="includeChosenCode"></div>
-                    <div id="includeRCode"></div>
-                    <div id="includeCppCode"></div>
-                    <div id="includeScalaCode"></div>
-                    <div id="includeJuliaCode"></div>
 
                     <!-- Pager -->
                     <ul class="pager">
@@ -135,17 +131,8 @@
     <footer>
       <div id="includeFooter"></div>
     </footer>
-    <!--
-    <script> 
-     $(function(){
-       $("#includeRCode").load("/posts/langCompare/Code/R.html"); 
-       $("#includeCppCode").load("/posts/langCompare/Code/cpp.html"); 
-       $("#includeScalaCode").load("/posts/langCompare/Code/scala.html"); 
-       $("#includeJuliaCode").load("/posts/langCompare/Code/julia.html"); 
-     });
-    </script> 
-    -->
-    <script> $(document).ready(function(){$("rcode").click(function(){$("#includeChosenCode").load("/posts/langCompare/Code/R.html");});});</script>
+
+    <script> $(document).ready(function(){$("button").click(function(){$("#includeChosenCode").load("/posts/langCompare/Code/R.html");});});</script>
 </body>
 
 </html>
