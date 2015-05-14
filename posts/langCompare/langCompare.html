@@ -79,11 +79,13 @@
                     purpose well.  However, at times, especially when doing
                     more computation-heavy analysis, R slows down, and reaches
                     memory limits. Hence, I've been looking around for a
-                    language that is reasonalbly fast, and quick to develop. I
-                    checked out C, C++, Go, Scala, and Julia. And since my
-                    computational work is usually Bayesian, I created my own
-                    criteria for judging performance &mdash; a standard Bayesian
-                    multiple linear regression algorithm.
+                    language that is reasonalbly fast, and quick to develop.
+                    Conciseness means less room for coding error (kind of) and
+                    usually higher productivity.  I checked out C, C++, Go,
+                    Scala, and Julia. And since my computational work is
+                    usually Bayesian, I created my own criteria for judging
+                    performance &mdash; a standard Bayesian multiple linear
+                    regression algorithm.
                     $$ y|\beta \sim Normal(X\beta,\sigma^2I) $$
                     $$ \beta \sim Normal(0,100(X'X)^{-1}) $$
                     $$ \sigma^2 \sim Gamma(1,1) $$
@@ -112,17 +114,19 @@
                     <a href="/posts/langCompare/img/speed.svg">
                         <img class="img-responsive" src="/posts/langCompare/img/speed.svg" alt="">
                     </a>
-                    <span class="caption text-muted">Note the speed.</span>
+                    <span class="caption text-muted">C++ wins in execution time.</span>
+                    <hr>
                     <a href="/posts/langCompare/img/lines.svg">
                         <img class="img-responsive" src="/posts/langCompare/img/lines.svg" alt="">
                     </a>
-                    <span class="caption text-muted">Note the lines.</span>
+                    <hr>
+                    <span class="caption text-muted">R wins marginally in conciseness.</span>
                     <a href="/posts/langCompare/img/lines.svg">
                         <img class="img-responsive" src="/posts/langCompare/img/vs.svg" alt="">
                     </a>
-                    <span class="caption text-muted">Note the tradeoff.</span>
-
+                    <span class="caption text-muted">We want things to be in the bottom left quadrant &mdash;  Julia wins that one.</span>
                     <hr>
+
                     <!--Include Code-->
                     <h2 class="section-heading">Sample Code</h2>
                     <button class="r">R</button>
