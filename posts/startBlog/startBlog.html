@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>First Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Inline Disqussions CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/inlineDisqussions.css" />
+
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+    <!--Inline Disqussion Chunks. Requires & must be AFTER jQuery. -->
+    <script src="/js/inlineDisqussions.js"></script>
+    <script src="/js/callInlineDisqussions.js"></script>
+    <!-- HTML File Inclusions-->
+    <script> 
+     $(function(){
+       $("#includeFooter").load("/chunks/myFooter.html"); 
+       $("#includeNav").load("/chunks/myNav.html"); 
+     });
+    </script> 
+
+    <!--MathJax-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div id="includeNav"></div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style=background-color:rgb(136,48,48);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>The Search for My Computational Programming Language</h1>
+                        <h2 class="subheading">Execution vs Development Time</h2>
+                        <!--<span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Having used R for 3 years in college, I've gotten to
+                    know the limits and conveniences of R. As a statistical
+                    package, with a large support community it serves its
+                    purpose well.  However, at times, especially when doing
+                    more computation-heavy analysis, R slows down, and reaches
+                    memory limits. Hence, I've been looking around for a
+                    language that is reasonalbly fast, and quick to develop. I
+                    checked out C, C++, Go, Scala, and Julia. And since my
+                    computational work is usually Bayesian, I created my own
+                    criteria for judging performance &mdash; a standard Bayesian
+                    multiple linear regression algorithm.
+                    $$ y|\beta \sim Normal(X\beta,\sigma^2I) $$
+                    $$ \beta \sim Normal(0,100(X'X)^{-1}) $$
+                    $$ \sigma^2 \sim Gamma(1,1) $$
+                    </p>
+                    <!--<h2 class="section-heading">The Final Frontier</h2>-->
+                    <p>bla.</p>
+                    <p>bla.</p>
+                    <!--<h2 class="section-heading">The Final Frontier</h2>-->
+                    <blockquote>blockquote.</blockquote>
+                    <a href="/posts/langCompare/img/speed.svg">
+                        <img class="img-responsive" src="/posts/langCompare/img/speed.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Note the speed.</span>
+                    <a href="/posts/langCompare/img/lines.svg">
+                        <img class="img-responsive" src="/posts/langCompare/img/lines.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Note the lines.</span>
+                    <a href="/posts/langCompare/img/lines.svg">
+                        <img class="img-responsive" src="/posts/langCompare/img/vs.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Note the tradeoff.</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div id="includeFooter"></div>
+    </footer>
+</body>
+
+</html>
