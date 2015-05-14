@@ -106,9 +106,8 @@
                     </a>
                     <span class="caption text-muted">Note the tradeoff.</span>
                     <hr>
-                    <pre>
-                      something
-                    </pre>
+                    <!--Include R Code-->
+                    <div id="includeRCode"></div>
                     <!-- Pager -->
                     <ul class="pager">
                         <li class="previous">
@@ -126,6 +125,11 @@
     <footer>
       <div id="includeFooter"></div>
     </footer>
+    <script> 
+     $(function(){
+       $("#includeRCode").load("/posts/langCompare/Code/R.html"); 
+     });
+    </script> 
 </body>
 
 </html>
