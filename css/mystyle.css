@@ -9,7 +9,7 @@
   #disqus_thread {
     /*when screen is less than 1000px, change bg color to blue.*/
    /*background-color:blue;*/ 
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 10px;
+    margin-left:  10px;
   }
 }
