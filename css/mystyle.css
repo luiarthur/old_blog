@@ -7,7 +7,7 @@
 
 @media only screen and (max-width: 620px){
   #endComments {
-    // screen < 500px, execute the following:
+    // screen < max-width, execute the following:
     width: 100%;
     margin-right: 10px;
     margin-left:  10px;
