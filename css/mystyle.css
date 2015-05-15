@@ -1,8 +1,10 @@
-//#endComments {
+#endComments {
 //  margin-right: 30%;
 //  margin-left: 30%;
 //  min-width: 768px;
-//}
+  max-width: 620;
+  margin: auto;
+}
 //
 //
 //@media only screen and (max-width: 768px){
@@ -16,24 +18,24 @@
 //}
 
 
-@media (min-width: 768px) {
-  #endComments {
-    width: 750px;
-    margin-right: 10px;
-    margin-left:  10px;
-  }
-}
-@media (min-width: 992px) {
-  #endComments {
-    width: 970px;
-    margin-right: 10px;
-    margin-left:  10px;
-  }
-}
-@media (min-width: 1200px) {
-  #endComments {
-    width: 1170px;
-    margin-right: 10px;
-    margin-left:  10px;
-  }
-}
+//@media (min-width: 768px) {
+//  #endComments {
+//    width: 750px;
+//    margin-right: 10px;
+//    margin-left:  10px;
+//  }
+//}
+//@media (min-width: 992px) {
+//  #endComments {
+//    width: 970px;
+//    margin-right: 10px;
+//    margin-left:  10px;
+//  }
+//}
+//@media (min-width: 1200px) {
+//  #endComments {
+//    width: 1170px;
+//    margin-right: 10px;
+//    margin-left:  10px;
+//  }
+//}
