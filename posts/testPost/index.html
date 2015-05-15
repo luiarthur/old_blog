@@ -5,11 +5,12 @@
 
     <link rel="stylesheet" href="blog.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--//Commented 
+    <!--//Commented Not working as simple-login is deprecated and replaced by authentication uri
     <link rel="stylesheet" href="/css/commented.min.css">
     -->
     <link rel="stylesheet" type="text/css" href="/css/inlineDisqussions.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Inline Discussion stuff. Must be after jquery.-->
     <script src="/js/inlineDisqussions.js"></script> </head>
     <script src="/js/callInlineDisqussions.js"></script>
 
@@ -44,5 +45,5 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
     <script src="/js/commented.min.js"></script>-->
   </body>
-  <div id="disqus_thread"></div>
+  <div id="disqus_thread"></div> <!--Add this for regular comments at the end also.-->
 </html>
