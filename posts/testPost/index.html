@@ -34,7 +34,18 @@
     -->
     </div>
 
-    <script> disqus_shortname = 'luiarthurgithubio'; jQuery(document).ready(function() { jQuery("p").inlineDisqussions({maxWidth:50}); }); </script>
+    <script> disqus_shortname = 'luiarthurgithubio'; 
+      jQuery(document).ready(function() { 
+        jQuery("p").inlineDisqussions({
+          identifier: 'disqussion',
+          displayCount: true,
+          highlighted: false,
+          position: 'right',
+          background: 'white',
+          maxWidth: 500
+        }); 
+      }); 
+    </script>
     <!--//commented
     <script src="//cdn.firebase.com/v0/firebase.js"></script>
     <script src="//cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js"></script>
