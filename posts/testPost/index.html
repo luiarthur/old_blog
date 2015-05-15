@@ -29,10 +29,12 @@
       Nulla arcu sapien, laoreet non ultrices ut, tristique vel enim. Morbi
       sollicitudin egestas urna. Curabitur accumsan nisl in metus rutrum, vel</p>
 
-    <!--//commented-->  
+    <!--//commented
     <div id="commented-main" data-firebase="luiarthur-comments" data-auth="github google facebook" data-inline=".main"></div>
+    -->
     </div>
 
+<script> disqus_shortname = 'main'; jQuery(document).ready(function() { jQuery("p").inlineDisqussions(); }); </script>
     <!--//commented
     <script src="//cdn.firebase.com/v0/firebase.js"></script>
     <script src="//cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js"></script>
@@ -41,4 +43,5 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
     <script src="/js/commented.min.js"></script>-->
   </body>
+  <div id="disqus_thread"></div>
 </html>
