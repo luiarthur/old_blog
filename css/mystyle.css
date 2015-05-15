@@ -9,6 +9,7 @@
   #endComments {
     // screen < max-width, execute the following:
     width: 100%;
+    min-width: auto;
     margin-right: 10px;
     margin-left:  10px;
   }
