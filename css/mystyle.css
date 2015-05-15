@@ -1,4 +1,15 @@
 #disqus_thread {
-  left-padding: 200px;
-  right-padding: 200px;
+  margin-right: 30%;
+  margin-left: 30%;
+  //min-width: 300px;
+}
+
+
+@media only screen and (max-width: 1000px){
+  #disqus_thread {
+    /*when screen is less than 1000px, change bg color to blue.*/
+   /*background-color:blue;*/ 
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
