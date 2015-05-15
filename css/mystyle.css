@@ -7,8 +7,7 @@
 
 @media only screen and (max-width: 500px){
   .mydq {
-    /*when screen is less than 1000px, change bg color to blue.*/
-   /*background-color:blue;*/ 
+    // screen < 500px, execute the following:
     width: 100%;
     margin-right: 10px;
     margin-left:  10px;
