@@ -3,7 +3,7 @@ disqus_shortname = 'luiarthurgithubio';
 jQuery(document).ready(function() {
   //jQuery("p").inlineDisqussions();
   jQuery("p").inlineDisqussions({
-    maxWidth: 50 
+    maxWidth: 300
   });
 });
 
