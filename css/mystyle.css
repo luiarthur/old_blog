@@ -1,16 +1,33 @@
-#endComments {
-  margin-right: 30%;
-  margin-left: 30%;
-  min-width: 800px;
-}
+//#endComments {
+//  margin-right: 30%;
+//  margin-left: 30%;
+//  min-width: 800px;
+//}
+//
+//
+//@media only screen and (max-width: 768px){
+//  #endComments {
+//    // screen < max-width, execute the following:
+//    width: 100%;
+//    min-width: auto;
+//    margin-right: 10px;
+//    margin-left:  10px;
+//  }
+//}
 
 
-@media only screen and (max-width: 800px){
+@media (min-width: 768px) {
   #endComments {
-    // screen < max-width, execute the following:
-    width: 100%;
-    min-width: auto;
-    margin-right: 10px;
-    margin-left:  10px;
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #endComments {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #endComments {
+    width: 1170px;
   }
 }
