@@ -32,7 +32,7 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <body>
-  <h1>Temperature Plot D3, a=0.2</h1>
+  <h1>Temperature Plot D3, a=0.3</h1>
   <script>
   /*Page Setup*/
   var margin = {top: 20, right: 80, bottom: 30, left: 50},
@@ -61,11 +61,11 @@
       /* d3.keys(data[0]) gets the column headers*/
       /* d3.keys(data[0]).filter(etc) gets all all the column headers except the first one, "date"*/
 
-    color.domain(d3.keys(data[0]).filter(function(key) { return key !== "tau"; }));
+    color.domain(d3.keys(data[0]).filter(function(key) { return key !== "010010"; }));
     var curves = color.domain().map(function(name) {
       return {
         name: name,
-        values: data.map(function(d) { return {xval: +d["tau"], yval: +d[name]}; })
+        values: data.map(function(d) { return {xval: +d["010010"], yval: +d[name]}; })
       };
     });
 
@@ -74,15 +74,15 @@
     */
 
     /*dynamic x,y-lim
-    x.domain(d3.extent(data, function(d) { return +d["tau"]; }));
+    x.domain(d3.extent(data, function(d) { return +d["010010"]; }));
     y.domain([
       d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
       d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
     ]);
     */
     /* x,y-lim set using R */
-    x.domain([0,4]);
-    y.domain([0.693040620086441,0.951775784918713]);
+    x.domain([0.951967187127803,0.955389814834457]);
+    y.domain([0.954851936179706,0.997534202360145]);
 
     /*debugger;*/
     /*Add x,y-axis*/

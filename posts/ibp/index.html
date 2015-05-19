@@ -32,7 +32,7 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <body>
-  <h1>Temperature Plot D2, a=0.3</h1>
+  <!--myMAIN-->
   <script>
   /*Page Setup*/
   var margin = {top: 20, right: 80, bottom: 30, left: 50},
@@ -56,16 +56,16 @@
 
   /* Read in Data and Plot */
   /*d3.tsv("sim.tsv", function(data) {*/
-  d3.tsv("dat2.tsv", function(data) {
+  d3.tsv("myDat.tsv", function(data) {
     /* maps colors to each city */
       /* d3.keys(data[0]) gets the column headers*/
       /* d3.keys(data[0]).filter(etc) gets all all the column headers except the first one, "date"*/
 
-    color.domain(d3.keys(data[0]).filter(function(key) { return key !== "tau"; }));
+    color.domain(d3.keys(data[0]).filter(function(key) { return key !== "x"; }));
     var curves = color.domain().map(function(name) {
       return {
         name: name,
-        values: data.map(function(d) { return {xval: +d["tau"], yval: +d[name]}; })
+        values: data.map(function(d) { return {xval: +d["x"], yval: +d[name]}; })
       };
     });
 
@@ -74,15 +74,15 @@
     */
 
     /*dynamic x,y-lim
-    x.domain(d3.extent(data, function(d) { return +d["tau"]; }));
+    x.domain(d3.extent(data, function(d) { return +d["x"]; }));
     y.domain([
       d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
       d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
     ]);
     */
     /* x,y-lim set using R */
-    x.domain([0,4]);
-    y.domain([0.576949810380487,0.990824623332825]);
+    x.domain([1,100]);
+    y.domain([27.6192218407146,38.0524857868293]);
 
     /*debugger;*/
     /*Add x,y-axis*/
