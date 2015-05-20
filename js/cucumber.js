@@ -97,8 +97,8 @@ function onShowClick() {
     $("#oldComments").show();
     $("#show-hide").text("").append(hide);
 };
-var hide = '<a href="#" id="hide" onclick="onHideClick()">hide</a><br/>';
-var show = '<a href="#" id="show" onclick="onShowClick()">show</a><br/>';
+var hide = '<a href="#" id="hide" onclick="onHideClick()">hide</a><hr>';
+var show = '<a href="#" id="show" onclick="onShowClick()">show</a><hr>';
 */
 function onCommentClick(e) {
   e.preventDefault();
