@@ -72,7 +72,7 @@ function onCommentKeyDown(event) {
 }
 
 //Create a query for only the last 4 comments
-var numOfComments = 10;
+var numOfComments = 100;
 //var nc = document.getElementById("numComments");
 //var numOfComments = nc.options[nc.selectedIndex].value;
 var lastXComments = ref.limit(numOfComments);
