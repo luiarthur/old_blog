@@ -12,6 +12,7 @@ body {
   /*border: 1px solid #bbb;*/
   background: #fff;
   min-height: 50px;
+  font: sans-serif;
 }
 .upic {
   padding-right: 10px;

@@ -19,9 +19,9 @@ function onLogoutClick() {
 }
 
 ref.onAuth(function(authData) {
-var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'   src='logos/github.png'>"+
-            "<img id='googleLogin' href='#' onclick='onLoginClick(\"google\")'   src='logos/google.png'>"+ 
-            "<img id='fbLogin'     href='#' onclick='onLoginClick(\"facebook\")' src='logos/fb.png'>";
+var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'   src='/logos/github.png'>"+
+            "<img id='googleLogin' href='#' onclick='onLoginClick(\"google\")'   src='/logos/google.png'>"+ 
+            "<img id='fbLogin'     href='#' onclick='onLoginClick(\"facebook\")' src='/logos/fb.png'>";
 var logout = "<a href='#' onclick='onLogoutClick()' id='logout'>logout</a>";
 
   if (authData) {
