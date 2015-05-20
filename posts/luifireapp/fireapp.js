@@ -77,12 +77,14 @@ var numOfComments = 100;
 //var numOfComments = nc.options[nc.selectedIndex].value;
 var lastXComments = ref.limit(numOfComments);
 
+/* For dropdown list (numOfComments)
 $(function(){
   var $select = $("#numComments");
   for (i=1;i<=10000;i++){
     $select.append($('<option></option>').val(i).html(i))
   }
 });
+*/
 
 //Render Comments
 lastXComments.on('child_added', function (snapshot) {
