@@ -14,7 +14,8 @@ var ref = new Firebase(link);
 function onLoginClick(provider) {
   ref.authWithOAuthPopup(provider,function(){});
 }
-function onLogoutClick() {
+function onLogoutClick(e) {
+  e.preventDefault(); //prevents default actions such as going to top of page because: href="#"
   ref.unauth();
 }
 
@@ -22,7 +23,7 @@ ref.onAuth(function(authData) {
 var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'   src='/logos/github.png'>"+
             "<img id='googleLogin' href='#' onclick='onLoginClick(\"google\")'   src='/logos/google.png'>"+ 
             "<img id='fbLogin'     href='#' onclick='onLoginClick(\"facebook\")' src='/logos/fb.png'>";
-var logout = "<a href='#' onclick='onLogoutClick()' id='logout'>logout</a>";
+var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>";
 
   if (authData) {
     switch(authData.provider) {
@@ -87,6 +88,7 @@ lastXComments.on("child_removed", function(snapshot) {
   $("#" + snapshot.name()).remove();
 });
 
+/*
 function onHideClick() {
     $("#oldComments").hide();
     $("#show-hide").text("").append(show);
@@ -95,6 +97,18 @@ function onShowClick() {
     $("#oldComments").show();
     $("#show-hide").text("").append(hide);
 };
-var hide = '<a href="#" id="hide" onclick="onHideClick()">hide</a>';
-var show = '<a href="#" id="show" onclick="onShowClick()">show</a>';
-
+var hide = '<a href="#" id="hide" onclick="onHideClick()">hide</a><br/>';
+var show = '<a href="#" id="show" onclick="onShowClick()">show</a><br/>';
+*/
+function onCommentClick(e) {
+  e.preventDefault();
+  if ($("#togComments").attr("show")=="1") {
+    $("#oldComments").hide();
+    $("#textWrap").hide();
+    $("#togComments").attr("show","0");
+  } else {
+    $("#oldComments").show();
+    $("#textWrap").show();
+    $("#togComments").attr("show","1");
+  }
+}

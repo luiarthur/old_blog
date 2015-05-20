@@ -27,22 +27,27 @@ body {
   border-top: 1px solid #E6E6E6;
 }
 #newComment {
-  width: 85%;
+  width: 90%;
   float: right;
   resize: none;
   font-family: sans-serif;
+  font-size:18;
+  margin-bottom:500px;
 }
 #oComName {
   color: steelblue;
+  font-size:18;
 }
 #oCom {
   word-wrap: break-word;
   font-family: sans-serif;
+  font-size:18;
 }
 #login, #logout {
   float:right;
   text-decoration:none;
   color: grey;
+  font-size:18;
 }
 #googleLogin,#fbLogin,#githubLogin {
   float:right;
@@ -54,4 +59,9 @@ body {
   float:right;
   text-decoration:none;
   color:grey;
+  font-size:15;
+}
+#togComments {
+  text-decoration:none;
+  color:darkgrey;
 }
