@@ -49,3 +49,6 @@ body {
   width:  20px;
   padding: 2px;
 }
+#numComments {
+  float:right;
+}
