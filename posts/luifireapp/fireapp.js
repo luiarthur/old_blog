@@ -72,17 +72,18 @@ function onCommentKeyDown(event) {
 }
 
 //Create a query for only the last 4 comments
-var last4Comments = ref.limit(4);
+var numOfComments = 14;
+var lastXComments = ref.limit(numOfComments);
 
 //Render Comments
-last4Comments.on('child_added', function (snapshot) {
+lastXComments.on('child_added', function (snapshot) {
   var comment = snapshot.val();
   var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.name()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
 });
 
 //Remove deleted comments
-last4Comments.on("child_removed", function(snapshot) {
+lastXComments.on("child_removed", function(snapshot) {
   $("#" + snapshot.name()).remove();
 });
 
