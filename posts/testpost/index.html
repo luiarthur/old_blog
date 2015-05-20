@@ -5,16 +5,18 @@
 
     <link rel="stylesheet" href="blog.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--//Commented Not working as simple-login is deprecated and replaced by authentication uri
-    <link rel="stylesheet" href="/css/commented.min.css">
-    -->
-    <link rel="stylesheet" type="text/css" href="/css/inlineDisqussions.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Inline Discussion stuff. Must be after jquery.
-    <script src="/js/inlineDisqussions.js"></script> </head>
-    <script src="/js/callInlineDisqussions.js"></script>
-    -->
+    <script type="text/javascript" src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.elastic.source.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/fireapp.css">
+    <script> 
+     $(function(){
+       $("#cucumber").load("/chunks/cucumber.html"); 
+     });
+    </script> 
 
+  </head>
   <body>
     <div class="main">
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -33,18 +35,8 @@
       Nulla arcu sapien, laoreet non ultrices ut, tristique vel enim. Morbi
       sollicitudin egestas urna. Curabitur accumsan nisl in metus rutrum, vel</p>
 
-    <!--//commented
-    <div id="commented-main" data-firebase="luiarthur-comments" data-auth="github google facebook" data-inline=".main"></div>
-    -->
+      <div id="cucumber"></div>
     </div>
 
-    <!--//commented
-    <script src="//cdn.firebase.com/v0/firebase.js"></script>
-    <script src="//cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react-with-addons.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
-    <script src="/js/commented.min.js"></script>-->
   </body>
-  <!--<div id="disqus_thread"></div> Add this for regular comments at the end also.-->
 </html>
