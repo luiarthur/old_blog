@@ -49,6 +49,8 @@ body {
   width:  20px;
   padding: 2px;
 }
-#numComments {
+#show,#hide {
   float:right;
+  text-decoration:none;
+  color:grey;
 }

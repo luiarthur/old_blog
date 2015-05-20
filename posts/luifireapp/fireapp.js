@@ -70,21 +70,10 @@ function onCommentKeyDown(event) {
     event.preventDefault(); // prevents default actions
   }
 }
+$("#newComment").elastic();
 
-//Create a query for only the last 4 comments
-var numOfComments = 100;
-//var nc = document.getElementById("numComments");
-//var numOfComments = nc.options[nc.selectedIndex].value;
-var lastXComments = ref.limit(numOfComments);
-
-/* For dropdown list (numOfComments)
-$(function(){
-  var $select = $("#numComments");
-  for (i=1;i<=10000;i++){
-    $select.append($('<option></option>').val(i).html(i))
-  }
-});
-*/
+//Create a query for only the last 100 comments
+var lastXComments = ref.limit(100);
 
 //Render Comments
 lastXComments.on('child_added', function (snapshot) {
@@ -98,4 +87,14 @@ lastXComments.on("child_removed", function(snapshot) {
   $("#" + snapshot.name()).remove();
 });
 
-$("#newComment").elastic();
+function onHideClick() {
+    $("#oldComments").hide();
+    $("#show-hide").text("").append(show);
+};
+function onShowClick() {
+    $("#oldComments").show();
+    $("#show-hide").text("").append(hide);
+};
+var hide = '<a href="#" id="hide" onclick="onHideClick()">hide</a>';
+var show = '<a href="#" id="show" onclick="onShowClick()">show</a>';
+
