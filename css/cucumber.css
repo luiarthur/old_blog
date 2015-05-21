@@ -64,5 +64,9 @@
   float: right;
   font-size: 15px;
   text-decoration:none;
+  color: #F0F0F0;
+}
+#x:hover {
+  color: steelblue;
 }
 

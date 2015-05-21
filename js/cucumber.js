@@ -4,6 +4,7 @@ var myPicture = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
+//var newCommentID = null;
 // Store: name, uid, body, picture
 
 //DANGER! REMOVE ALL COMMENTS!
@@ -64,8 +65,11 @@ function onCommentKeyDown(event) {
       if (event.shiftKey) {
         $("#newComment").val($("#newComment").val()+"\n");
       } else {
-        ref.push({userid: myUserID, body: $("#newComment").val(), name: myName, picture:myPicture});
-        $("#newComment").val("");
+        //var newRef = 
+          ref.push({userid: myUserID, body: $("#newComment").val(), name: myName, picture:myPicture});
+          $("#newComment").val("");
+        //newCommentID=newRef.key();
+        //$(".oComNew").attr("id",newCommentID).attr("class","oCom");
       }
     }
     event.preventDefault(); // prevents default actions
@@ -74,32 +78,28 @@ function onCommentKeyDown(event) {
 $("#newComment").elastic();
 
 //Create a query for only the last 100 comments
-var lastXComments = ref.limit(100);
+var lastXComments = ref.limitToLast(100);
 
 //Render Comments
 lastXComments.on('child_added', function (snapshot) {
   var comment = snapshot.val();
-  var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.name()).appendTo("#oldComments");
+  var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.key()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
 });
 
 //Remove deleted comments
 lastXComments.on("child_removed", function(snapshot) {
-  $("#" + snapshot.name()).remove();
+  $("#" + snapshot.key()).remove();
 });
 
-/*
-function onHideClick() {
-    $("#oldComments").hide();
-    $("#show-hide").text("").append(show);
-};
-function onShowClick() {
-    $("#oldComments").show();
-    $("#show-hide").text("").append(hide);
-};
-var hide = '<a href="#" id="hide" onclick="onHideClick()">hide</a><hr>';
-var show = '<a href="#" id="show" onclick="onShowClick()">show</a><hr>';
-*/
+//Not too bad now, but needs fixing.
+//Try deleting as non user to see why.
+function onClickRemove(e) { 
+  var commentID = e.parentNode.parentNode.id;
+  var rmRef = new Firebase(link+"/"+commentID);
+  rmRef.remove();
+}
+
 function onCommentClick(e) {
   e.preventDefault();
   if ($("#togComments").attr("show")=="1") {
