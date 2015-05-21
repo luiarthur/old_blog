@@ -4,7 +4,7 @@
   - remove / edit own comments
   - inline cucumber
   - vote up / down
-  - reply
+  - reply, and send email to author when replied to
   - store: email, time, votes
 -->
 <hr>
@@ -12,7 +12,7 @@
 <div id="oldComments">
   <script id="template" type="text/template">
     <img class="upic" src="{{picture}}">
-    <span class="oCom"><b id="oComName">{{name}} &nbsp;</b>{{body}}<br/><a id="x" onclick="onClickRemove(this)">&#10006;</a></span> 
+    <span class="oCom"><b id="oComName">{{name}} &nbsp;</b>{{body}}<br/><abbr class="timeago">{{time}}</abbr><a id="x" onclick="onClickRemove(this)">&#10006;</a></span> 
   </script>
 </div>
 <div id="textWrap">

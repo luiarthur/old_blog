@@ -4,6 +4,7 @@ var myPicture = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
+//
 //var newCommentID = null;
 // Store: name, uid, body, picture
 
@@ -65,11 +66,10 @@ function onCommentKeyDown(event) {
       if (event.shiftKey) {
         $("#newComment").val($("#newComment").val()+"\n");
       } else {
-        //var newRef = 
-          ref.push({userid: myUserID, body: $("#newComment").val(), name: myName, picture:myPicture});
+          var currTime = new Date();
+          currTime = currTime.toString();
+          ref.push({userid: myUserID, body: $("#newComment").val(), name: myName, picture:myPicture, time:currTime});
           $("#newComment").val("");
-        //newCommentID=newRef.key();
-        //$(".oComNew").attr("id",newCommentID).attr("class","oCom");
       }
     }
     event.preventDefault(); // prevents default actions
@@ -83,6 +83,7 @@ var lastXComments = ref.limitToLast(100);
 //Render Comments
 lastXComments.on('child_added', function (snapshot) {
   var comment = snapshot.val();
+  comment.time = jQuery.timeago(new Date(comment.time));
   var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.key()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
 });

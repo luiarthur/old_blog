@@ -69,4 +69,7 @@
 #x:hover {
   color: steelblue;
 }
-
+.timeago {
+  color: lightgrey;
+  font-size: 15px;
+}
