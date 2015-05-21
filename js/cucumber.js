@@ -113,3 +113,7 @@ function onCommentClick(e) {
     $("#togComments").attr("show","1");
   }
 }
+
+// Only give remove options to those that have access.
+// Show remove options on mouseover.
+// http://www.w3schools.com/jquery/jquery_events.asp
