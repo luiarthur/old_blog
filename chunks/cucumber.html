@@ -1,9 +1,18 @@
+<!--
+  To do:
+  - add time stamp
+  - remove / edit own comments
+  - inline cucumber
+  - vote up / down
+  - reply
+  - store: email, time, votes
+-->
 <hr>
 <h2><a id="togComments" href="#" show="1" onclick="onCommentClick(event)">Comments</a></h2>
 <div id="oldComments">
   <script id="template" type="text/template">
     <img class="upic" src="{{picture}}">
-    <span id="oCom"><b id="oComName">{{name}} &nbsp;</b>{{body}}</span>
+    <span class="oCom"><b id="oComName">{{name}} &nbsp;</b>{{body}}<br/><a id="x">&#10006;</a></span> 
   </script>
 </div>
 <div id="textWrap">
