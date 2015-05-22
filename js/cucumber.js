@@ -4,6 +4,8 @@ var myPicture = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
+var myComments = null;
+var NotMyComments = null;
 
 //var newCommentID = null;
 // Store: name, uid, body, picture
@@ -16,12 +18,21 @@ var ref = new Firebase(link);
 $(document).ready(function(){ // executes js when document is ready. Allows js to be put in head. Good practice.
 });
 
+function whosComm() {
+  myComments = $(".oCom[userid='"+ref.getAuth().uid+"']");
+  notMyComments = $(".oCom[userid!='"+ref.getAuth().uid+"']");
+  myComments.children("a").attr("class","");
+  notMyComments.children("a").attr("class","hide");
+}
+
 function onLoginClick(provider) {
   ref.authWithOAuthPopup(provider,function(){});
+  whosComm();
 }
 function onLogoutClick(e) {
   e.preventDefault(); //prevents default actions such as going to top of page because: href="#"
   ref.unauth();
+  whosComm();
 }
 
 ref.onAuth(function(authData) {
@@ -82,6 +93,8 @@ $("#newComment").elastic();
 //Create a query for only the last 100 comments
 var lastXComments = ref.limitToLast(100);
 
+
+
 //Render Comments
 lastXComments.on('child_added', function (snapshot) {
   var comment = snapshot.val();
@@ -89,8 +102,7 @@ lastXComments.on('child_added', function (snapshot) {
   var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.key()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
   // If the comment owner is logged in, he can view the remove the comment option.
-  var myComments = $(".oCom[userid='"+ref.getAuth().uid+"']");
-  myComments.children("a").attr("class","");
+  whosComm();
 });
 
 //Remove deleted comments
@@ -118,7 +130,6 @@ function onCommentClick(e) {
     $("#togComments").attr("show","1");
   }
 }
-
 // Only give remove options to those that have access.
 // Show remove options on mouseover.
 // http://www.w3schools.com/jquery/jquery_events.asp
