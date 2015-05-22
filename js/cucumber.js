@@ -4,7 +4,7 @@ var myPicture = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
-//
+
 //var newCommentID = null;
 // Store: name, uid, body, picture
 
@@ -31,19 +31,18 @@ var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'  
 var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>";
 
   if (authData) {
+    myUserID = authData.uid; 
+
     switch(authData.provider) {
       case "google": 
-        myUserID = authData.google.id; 
         myName = authData.google.displayName; 
         myPicture = authData.google.cachedUserProfile.picture;
         break;
       case "facebook":
-        myUserID = authData.facebook.id; 
         myName = authData.facebook.displayName; 
         myPicture = authData.facebook.cachedUserProfile.picture.data.url;
         break;
       case "github":
-        myUserID = authData.github.id; 
         myName = authData.github.displayName; 
         myPicture = authData.github.cachedUserProfile.avatar_url;
         break;
@@ -90,9 +89,8 @@ lastXComments.on('child_added', function (snapshot) {
   var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.key()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
   // If the comment owner is logged in, he can view the remove the comment option.
-  //$("#x[uid='"+ref.getAuth().uid+"']").attr("class","");
   var myComments = $(".oCom[userid='"+ref.getAuth().uid+"']");
-  //console.log(myComments);
+  myComments.children("a").attr("class","");
 });
 
 //Remove deleted comments
