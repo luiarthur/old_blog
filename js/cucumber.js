@@ -13,6 +13,9 @@ var ref = new Firebase(link);
 //temp.auth("SECRET");
 //temp.remove();
 
+$(document).ready(function(){ // executes js when document is ready. Allows js to be put in head. Good practice.
+});
+
 function onLoginClick(provider) {
   ref.authWithOAuthPopup(provider,function(){});
 }
@@ -86,6 +89,10 @@ lastXComments.on('child_added', function (snapshot) {
   comment.time = jQuery.timeago(new Date(comment.time));
   var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.key()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
+  // If the comment owner is logged in, he can view the remove the comment option.
+  //$("#x[uid='"+ref.getAuth().uid+"']").attr("class","");
+  var myComments = $(".oCom[userid='"+ref.getAuth().uid+"']");
+  //console.log(myComments);
 });
 
 //Remove deleted comments
