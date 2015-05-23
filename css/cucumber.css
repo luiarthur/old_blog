@@ -18,14 +18,15 @@
   margin-top: 10px;
   border-top: 1px solid #E6E6E6;
 }
-#newComment {
+.commentBox {
   width: 92%;
   float: right;
   resize: none;
   font-family: sans-serif;
   font-size:18;
-  border: none;
+  /*border: none;*/
   margin-bottom:30px;
+  border-radius: 3px;
 }
 #oComName {
   color: steelblue;
@@ -59,12 +60,19 @@
   text-decoration:none;
   color:darkgrey;
 }
-
+#pen {
+  height:12px;
+  width:auto;
+  opacity:.5;
+}
+#pen:hover {
+  opacity:1;
+}
 #x {
-  float: right;
+  /*float: right;*/
   font-size: 15px;
   text-decoration:none;
-  color: #F0F0F0;
+  color:lightgrey;
 }
 #x:hover {
   color: steelblue;

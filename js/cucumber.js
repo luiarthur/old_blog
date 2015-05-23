@@ -4,8 +4,6 @@ var myPicture = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
-var myComments = null;
-var NotMyComments = null;
 
 //var newCommentID = null;
 // Store: name, uid, body, picture
@@ -18,21 +16,14 @@ var NotMyComments = null;
 $(document).ready(function(){ // executes js when document is ready. Allows js to be put in head. Good practice.
 });
 
-function whosComm() {
-  myComments = $(".oCom[userid='"+ref.getAuth().uid+"']");
-  notMyComments = $(".oCom[userid!='"+ref.getAuth().uid+"']");
-  myComments.children("a").attr("class","");
-  notMyComments.children("a").attr("class","hide");
-}
-
+//$(".oCom[userid='"+uid+"']").children(".editCom").show();
 function onLoginClick(provider) {
   ref.authWithOAuthPopup(provider,function(){});
-  whosComm();
 }
 function onLogoutClick(e) {
   e.preventDefault(); //prevents default actions such as going to top of page because: href="#"
   ref.unauth();
-  whosComm();
+  $(".oCom").children(".editCom").hide();
 }
 
 ref.onAuth(function(authData) {
@@ -58,6 +49,7 @@ var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>"
         myPicture = authData.github.cachedUserProfile.avatar_url;
         break;
     }
+    $(".oCom[userid='"+myUserID+"']").children(".editCom").show();
     $("#logIO").text("").append(logout);
     $("#userPic").attr("src",myPicture);
     $("#newComment").attr("placeholder",myName+"' s comment...");
@@ -93,8 +85,6 @@ $("#newComment").elastic();
 //Create a query for only the last 100 comments
 var lastXComments = ref.limitToLast(100);
 
-
-
 //Render Comments
 lastXComments.on('child_added', function (snapshot) {
   var comment = snapshot.val();
@@ -102,7 +92,8 @@ lastXComments.on('child_added', function (snapshot) {
   var newDiv = $("<div/>").addClass("comment").attr("id",snapshot.key()).appendTo("#oldComments");
   newDiv.html(Mustache.to_html($('#template').html(), comment));
   // If the comment owner is logged in, he can view the remove the comment option.
-  whosComm();
+  $(".oCom").children(".editCom").hide();
+  $(".oCom[userid='"+myUserID+"']").children(".editCom").show();
 });
 
 //Remove deleted comments
@@ -110,12 +101,29 @@ lastXComments.on("child_removed", function(snapshot) {
   $("#" + snapshot.key()).remove();
 });
 
-//Not too bad now, but needs fixing.
-//Try deleting as non user to see why.
+//Remove Comment
 function onClickRemove(e) { 
   var commentID = e.parentNode.parentNode.id;
   var rmRef = new Firebase(link+"/"+commentID);
   rmRef.remove();
+}
+
+//Edit Comment:
+function onClickEdit(e) {
+  //var commentID = e.parentNode.parentNode.id;
+  commentID = e.parentNode.parentNode.id;
+  var edRef = new Firebase(link+"/"+commentID);
+  var loc = $("#"+commentID)
+  var curCom = loc.children("span").children("text");
+  alert("coming soon...");
+  // Make a change!
+  //loc.children("span").replaceWith("<textarea class='commentBox' style='border:1px solid;'></textarea>");
+  //ta = loc.children("textarea");
+  //ta.focus().val("").val(curCom.text());
+  //$(".commentBox").elastic();
+  //loc.children("textarea").text(curCom.text());
+  //var newCom = loc.children("textarea").text();  
+  //edRef.child("body").set(newCom);
 }
 
 function onCommentClick(e) {
