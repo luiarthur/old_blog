@@ -109,21 +109,30 @@ function onClickRemove(e) {
 }
 
 //Edit Comment:
+var eComID = null;
+var orig = null;
 function onClickEdit(e) {
   //var commentID = e.parentNode.parentNode.id;
-  commentID = e.parentNode.parentNode.id;
-  var edRef = new Firebase(link+"/"+commentID);
-  var loc = $("#"+commentID)
+  eComID = e.parentNode.parentNode.id;
+  var edRef = new Firebase(link+"/"+eComID);
+  var loc = $("#"+eComID);
+  orig = loc.html();
+  console.log(orig);
   var curCom = loc.children("span").children("text");
-  alert("coming soon...");
-  // Make a change!
-  //loc.children("span").replaceWith("<textarea class='commentBox' style='border:1px solid;'></textarea>");
-  //ta = loc.children("textarea");
-  //ta.focus().val("").val(curCom.text());
-  //$(".commentBox").elastic();
-  //loc.children("textarea").text(curCom.text());
-  //var newCom = loc.children("textarea").text();  
-  //edRef.child("body").set(newCom);
+  loc.children("span").replaceWith("<textarea id='eCom' onkeydown='onEditKeyDown(event)' class='commentBox' style='border:1px solid;'></textarea>");
+  loc.after("<p style='clear:both'></p>");
+  var ta = loc.children("textarea");
+  ta.focus().val("").val(curCom.text());
+  $(".commentBox").elastic();
+}
+function onEditKeyDown(e) {
+  var edRef = new Firebase(link+"/"+eComID);
+  var loc = $("#"+eComID)
+  var ta = loc.children("textarea");
+  if (e.keyCode==13) {
+    edRef.child('body').set(ta.val());
+    loc.html("").append(orig).children("span").children("text").text(ta.val());
+  }
 }
 
 function onCommentClick(e) {
