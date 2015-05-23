@@ -2,7 +2,7 @@ var myUserID = null;
 var myName = null;
 var myPicture = null;
 var myUrl = null;
-var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
+var slug = (window.location.href).replace("index.html","").replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
 
