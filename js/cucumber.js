@@ -1,6 +1,7 @@
 var myUserID = null;
 var myName = null;
 var myPicture = null;
+var myUrl = null;
 var slug = (window.location.href).replace(/\/|\.|:|\[|\]|\#|\$\-/g,"");
 var link = "https://luifireapp.firebaseio.com/comments/"+slug;
 var ref = new Firebase(link);
@@ -39,14 +40,17 @@ var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>"
       case "google": 
         myName = authData.google.displayName; 
         myPicture = authData.google.cachedUserProfile.picture;
+        myUrl = authData.google.cachedUserProfile.link;
         break;
       case "facebook":
         myName = authData.facebook.displayName; 
         myPicture = authData.facebook.cachedUserProfile.picture.data.url;
+        myUrl = authData.facebook.cachedUserProfile.link;
         break;
       case "github":
         myName = authData.github.displayName; 
         myPicture = authData.github.cachedUserProfile.avatar_url;
+        myUrl = "https://github.com/"+authData.github.username;
         break;
     }
     $(".oCom[userid='"+myUserID+"']").children(".editCom").show();
@@ -73,7 +77,7 @@ function onCommentKeyDown(event) {
       } else {
           var currTime = new Date();
           currTime = currTime.toString();
-          ref.push({userid: myUserID, body: $("#newComment").val(), name: myName, picture:myPicture, time:currTime});
+          ref.push({userid:myUserID, body:$("#newComment").val(), name:myName, picture:myPicture, time:currTime, url:myUrl});
           $("#newComment").val("");
       }
     }
