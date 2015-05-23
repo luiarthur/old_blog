@@ -61,7 +61,7 @@ var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>"
     $("#logIO").text("").append(login);
     myName=null;
     myUserID=null;
-    myPicture="http://sigaramae.org/img/team-placeholder-man.jpg";
+    myPicture="/img/man.jpg";
     $("#userPic").attr("src",myPicture);
     $("#newComment").attr("placeholder","Please login to comment...");
   }
