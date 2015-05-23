@@ -6,25 +6,17 @@
   min-height: 50px;
   font: sans-serif;
 }
-.upic {
-  padding-right: 10px;
-  float: left;
-  width: 8%;
-  height: auto;
-  border-radius: 50%;
-}
 #textWrap {
   padding-top: 5px;
   margin-top: 10px;
   border-top: 1px solid #E6E6E6;
 }
 .commentBox {
-  width: 92%;
-  float: right;
+  width: 100%;
+  /*float:right;*/
   resize: none;
   font-family: sans-serif;
   font-size:15px;
-  /*border: none;*/
   margin-bottom:30px;
   border-radius: 3px;
 }
@@ -32,13 +24,23 @@
   color: steelblue;
   font-size:16px;
 }
+.upic {
+  border-radius: 50%;
+  margin-left: 15px;
+  position:absolute;
+  left:0;
+  width:50px;
+}
 .oCom {
-  width:92%;/*new*/
-  float:right;/*new*/
+  margin-left:50px;
   display:inline-block;
   word-wrap: break-word;
   font-family: sans-serif;
   font-size:16px;
+}
+.twrap{
+  overflow: hidden;
+  padding-left: 55px;
 }
 #login, #logout {
   float:right;
