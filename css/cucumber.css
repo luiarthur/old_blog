@@ -81,6 +81,6 @@
   color: lightgrey;
   font-size: 15px;
 }
-.noul:hover,.nohl:visited {
+.noul:hover,.nohl:visited,.nohl:link{
   text-decoration:none
 }
