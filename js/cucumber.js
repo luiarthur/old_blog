@@ -66,6 +66,7 @@ var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>"
     $("#newComment").attr("placeholder","Please login to comment...");
   }
 });
+$("#newComment").elastic();
 
 function onCommentKeyDown(event) {
   if (event.keyCode == 13) {
@@ -84,7 +85,6 @@ function onCommentKeyDown(event) {
     event.preventDefault(); // prevents default actions
   }
 }
-$("#newComment").elastic();
 
 //Create a query for only the last 100 comments
 var lastXComments = ref.limitToLast(100);
