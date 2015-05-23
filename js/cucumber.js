@@ -123,16 +123,16 @@ function onClickEdit(e) {
   orig = loc.html();
   console.log(orig);
   var curCom = loc.children("span").children("text");
-  loc.children("span").replaceWith("<textarea id='eCom' onkeydown='onEditKeyDown(event)' class='commentBox' style='border:1px solid;'></textarea>");
+  loc.children("span").replaceWith("<div class='twrap'><textarea id='eCom' onkeydown='onEditKeyDown(event)' class='commentBox' style='border:1px solid;'></textarea></div>");
   loc.after("<p style='clear:both'></p>");
-  var ta = loc.children("textarea");
+  var ta = loc.children("div").children("textarea");
   ta.focus().val("").val(curCom.text());
   $(".commentBox").elastic();
 }
 function onEditKeyDown(e) {
   var edRef = new Firebase(link+"/"+eComID);
   var loc = $("#"+eComID)
-  var ta = loc.children("textarea");
+  var ta = loc.children("div").children("textarea");
   if (e.keyCode==13) {
     edRef.child('body').set(ta.val());
     loc.html("").append(orig).children("span").children("text").text(ta.val());
