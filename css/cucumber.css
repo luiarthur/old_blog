@@ -78,7 +78,8 @@
   color:lightgrey;
 }
 #x:hover {
-  color: steelblue;
+  color:red;
+  cursor:default;
 }
 .timeago {
   color: lightgrey;
