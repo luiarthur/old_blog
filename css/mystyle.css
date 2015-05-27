@@ -1,6 +1,12 @@
-#endComments {
+#endComments { /*Disqus, I think...*/
   max-width: 768px;
   margin: auto;
   padding-left:  15px;
   padding-right: 15px;
 }
+
+div > img {
+  max-height:100%;
+  max-width:100%;
+}
+
