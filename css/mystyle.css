@@ -9,3 +9,8 @@ div > img {
   max-height:100%;
   max-width:100%;
 }
+
+img.eg {
+  padding:5%;
+  background-color:lightseagreen;
+}
