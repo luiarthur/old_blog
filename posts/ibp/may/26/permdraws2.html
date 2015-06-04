@@ -32,7 +32,7 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <body>
-  \begin{bmatrix}{}  0.0 & 10.0 & 1.0 & 10.0 \\   10.0 & 0.0 & 5.2 & 10.0 \\   1.0 & 5.2 & 0.0 & 5.2 \\   10.0 & 10.0 & 5.2 & 0.0 \\   \end{bmatrix}
+  \begin{bmatrix}{}  0 & 1 & 2 & 3 \\   1 & 0 & 4 & 5 \\   2 & 4 & 0 & 6 \\   3 & 5 & 6 & 0 \\   \end{bmatrix}
   <!--myMAIN-->
   <script>
   /*Page Setup*/
@@ -57,7 +57,7 @@
 
   /* Read in Data and Plot */
   /*d3.tsv("sim.tsv", function(data) {*/
-  d3.tsv("permdraw4.tsv", function(data) {
+  d3.tsv("permdraws2.tsv", function(data) {
     /* maps colors to each city */
       /* d3.keys(data[0]) gets the column headers*/
       /* d3.keys(data[0]).filter(etc) gets all all the column headers except the first one, "date"*/
