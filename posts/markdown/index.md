@@ -48,27 +48,6 @@ Unicode is supported. ☺
   }
 ~~~
 
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
 ![example image](example-image.jpg "An exemplary image")
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
