@@ -28,6 +28,7 @@ Here is a List:
 
 [Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
 
+***
 
 > Block quotes are
 > written like so.
@@ -47,7 +48,6 @@ Unicode is supported. ☺
   }
 ~~~
 
-***
 
 Here's a definition list:
 
