@@ -15,6 +15,7 @@ Display:
 $$ X'X^{-1} $$
 
 Here is a List:
+
   * One Bullet
   * Another bullet
     * a sub bullet
