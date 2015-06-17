@@ -9,9 +9,9 @@ title: Testing Markdown
 |Arthur    |None| Lui       |
 |Jacky     |None| Chan      |
 
-Inline: $ X\prime X^{-1} $
+Inline: $ X'X^{-1} $
 
 Display:
-$$ X\prime X^{-1} $$
+$$ X'X^{-1} $$
 
 [Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
