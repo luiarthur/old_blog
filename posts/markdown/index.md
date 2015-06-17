@@ -4,7 +4,7 @@ title: Testing Markdown
 
 # This is a test Hash
 
-|First Name| Last Name |
-|----------|-----------|
-|Arthur    | Lui       |
-|Jacky     | Chan      |
+|First Name|Middle Name| Last Name |
+|:-------- |:---------:|----------:|
+|Arthur    |None| Lui       |
+|Jacky     |None| Chan      |
