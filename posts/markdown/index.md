@@ -9,8 +9,6 @@ title: Testing Markdown
 |Arthur    |None| Lui       |
 |Jacky     |None| Chan      |
 
-
-
 Inline: $ X'X^{-1} $
 
 Display:
