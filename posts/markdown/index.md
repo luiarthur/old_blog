@@ -1,5 +1,5 @@
 ---
-title: Document Center
+title:  Center
 ---
 
 This is a test
