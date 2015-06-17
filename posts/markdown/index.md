@@ -7,3 +7,4 @@ title: Testing Markdown
 |First Name| Last Name |
 |----------|-----------|
 |Arthur    | Lui       |
+|Jacky     | Chan      |
