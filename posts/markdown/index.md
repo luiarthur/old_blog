@@ -16,7 +16,7 @@ $$ X'X^{-1} $$
 
 Here is a List:
 
-  * Styling: *Italic*, **bold**, and `monospace`. Itemized lists
+  * Styling: *Italic*, **bold**, `monospace`
   * One Bullet
   * Another bullet
     * a sub bullet
