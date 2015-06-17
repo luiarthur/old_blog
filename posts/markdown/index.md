@@ -16,6 +16,7 @@ $$ X'X^{-1} $$
 
 Here is a List:
 
+  * Styling: *Italic*, **bold**, and `monospace`. Itemized lists
   * One Bullet
   * Another bullet
     * a sub bullet
@@ -26,12 +27,7 @@ Here is a List:
 
 [Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
 
-An h1 header
-============
 
-Paragraphs are separated by a blank line.
-
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
 
   * this one
