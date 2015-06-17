@@ -1,7 +1,6 @@
 ---
-title:Testing Markdown
+title: Testing Markdown
 ---
 
-This is a test
-==============
+#This is a test
 
