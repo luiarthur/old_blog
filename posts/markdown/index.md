@@ -15,14 +15,13 @@ Display:
 $$ X'X^{-1} $$
 
 Here is a List:
-
-* One Bullet
-* Another bullet
-  * a sub bullet
-  * another sub bullet
-* Regular bullet
-* Another one
-  * Yet another sub
+  * One Bullet
+  * Another bullet
+    * a sub bullet
+    * another sub bullet
+  * Regular bullet
+  * Another one
+    * Yet another sub
 
 [Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
 
