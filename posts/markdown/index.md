@@ -1,7 +1,43 @@
 ---
 title: Testing Markdown
 ---
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- My CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css" />
 
+    <!--MathJax-->
+    <!--script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script-->
+    <!--d3. Not necessary. Just for exploration.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+    <!-- HTML File Inclusions-->
+    <!-- Cucumber. Needs jQuery. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.1/jquery.timeago.js"></script>
+    <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.elastic.source.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/cucumber.css">
+    <script> $(function(){$("#cucumber").load("/chunks/cucumber.html");}); </script> 
+
+    <!--other chunk inclusions-->
+    <script> 
+     $(function(){
+       $("#includeFooter").load("/chunks/myFooter.html"); 
+       $("#includeNav").load("/chunks/myNav.html"); 
+     });
+    </script> 
 # H1 Header
 
 |First Name|Middle Name| Last Name |
