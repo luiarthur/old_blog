@@ -1,3 +1,7 @@
+---
+title: This is my markdown
+---
+
 This is it
 ==========
 
