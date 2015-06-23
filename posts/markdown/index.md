@@ -2,8 +2,6 @@
 title: This is my markdown
 ---
 
-H1 Header
-==========
 
 #H1 Header
 
