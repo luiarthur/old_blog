@@ -1,6 +1,6 @@
 ---
-title: This is my markdown
 layout: page
+title: This is my markdown
 ---
 
 H1 Header
