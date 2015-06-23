@@ -1,7 +1,3 @@
----
-title: This is my markdown
----
-
 H1 Header
 ==========
 
