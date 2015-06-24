@@ -42,7 +42,7 @@ image:
   - latex syntax conversion
       1. \alpha
       2. $$X'X^{-1}X'y$$
-      2. $(x-a)(x-b)... (x-z) = ?$
+      3. $(x-a)(x-b)... (x-z) = ?$
 
 ![example image](/img/briar.jpg)
 
