@@ -61,7 +61,7 @@ for (i in 1:100) {
       3. Display math: \\[X'X^{-1}X'y\\]
       4. regular letters in math mode: \\((x-a)(x-b)... (x-z) = ?\\)
   - Styles:
-    - *Italics* **bold** `monospace` ~~strikethrough~~
+    - *Italics* **bold** ~~strikethrough~~ `monospace` 
 
 
 ![example image](/img/briar.jpg)
