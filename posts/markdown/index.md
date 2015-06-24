@@ -38,13 +38,13 @@ image:
 
 ## Other Stuff:
 
+  - latex syntax conversion
+      1. Greek letter: \\( \alpha \\)
+      2. Inline math: \\(X'X^{-1}X'y\\)
+      3. Display math: $$X'X^{-1}X'y$$
+      4. regular letters in math mode: \\((x-a)(x-b)... (x-z) = ?\\)
   - need to figure out:
     - *program* **syntax** `highlighting`
-  - latex syntax conversion
-      1. \\( \alpha \\)
-      2. \\(X'X^{-1}X'y\\)
-      3. $$X'X^{-1}X'y$$
-      4. \\((x-a)(x-b)... (x-z) = ?\\)
+
 
 ![example image](/img/briar.jpg)
-
