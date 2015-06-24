@@ -60,3 +60,14 @@ image:
   x <- rnorm(100)
   x <- rnorm(100)
 </code></pre>
+
+<pre><code>
+  x <- rnorm(100)
+  x <- rnorm(100)
+  x <- rnorm(100)
+  x <- rnorm(100)
+  x <- rnorm(100)
+  x <- rnorm(100)
+  x <- rnorm(100)
+  x <- rnorm(100)
+</code></pre>
