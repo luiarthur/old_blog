@@ -11,10 +11,12 @@ nexttitle: Home
 image:
 ---
 
+
 # This is it
 [Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
 
 ***
+
 
 ## Poetry
 
@@ -34,7 +36,7 @@ image:
     plot(x,y)
 
 
-### Stuff to figure out:
+## Stuff to figure out:
 
   - *program* **syntax** `highlighting`
   - latex syntax conversion
