@@ -55,4 +55,5 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+## a random h2 header
 ![example image](/img/briar.jpg "An exemplary image")
