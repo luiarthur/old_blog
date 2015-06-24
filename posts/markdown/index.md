@@ -9,24 +9,11 @@ nexturl: google.com
 nexttitle: Google
 ---
 
-H1 Header
-==========
-
 #H1 Header
 
-    a block of stuff?
-    a block of stuff?
-    a block of stuff?
-
-|First Name|Middle Name| Last Name |
-|:---------|:---------:|----------:|
-|Arthur    |None| Lui       |
-|Jacky     |None| Chan      |
-
-Inline: $X'X^{-1}$
-
-Display:
-$$X'X^{-1}$$
+    A chunk of code
+    A chunk of code
+    A chunk of code
 
 Here is a List:
 
@@ -44,11 +31,13 @@ Here is a List:
 
 ***
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+> I whispered, "I am too young", and then
+> "I am old enough now"
+> wherefore, I threw a penny that I might know
+> if I might love
+> 
+> "Go and love, 
+> go and love, young man."
 
 Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
@@ -64,11 +53,4 @@ Unicode is supported. ☺
 
 ![example image](/img/briar.jpg "An exemplary image")
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
 
