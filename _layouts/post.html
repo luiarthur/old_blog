@@ -57,7 +57,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-color:{{bannercolor}}">
+    <header class="intro-header" style="background-color:{{page.bannercolor}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -82,10 +82,10 @@
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="previous">
-                      <a href={{previousurl}}>&larr;{{nexttitle}}</a>
+                      <a href='{{page.previousurl}}'>&larr;{{page.nexttitle}}</a>
                     </li>
                     <li class="next">
-                      <a href={{nexturl}}>&rarr;{{previoustitle}}</a>
+                      <a href='{{page.nexturl}}'>&rarr;{{page.previoustitle}}</a>
                     </li>    
                   </ul>
             </div>
