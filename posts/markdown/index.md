@@ -31,7 +31,7 @@ image:
 
 ## Here is some code: 
 
-<pre style="padding:0"><code>
+<pre style="padding:0"><code class="julia">
 include("aibp.jl") 
 
 b = inv(X'X)*(X'y)
