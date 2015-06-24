@@ -61,7 +61,7 @@ image:
   x <- rnorm(100)
 </code></pre>
 
-<pre><code>
+<pre><code style="agate">
   x <- rnorm(100)
   x <- rnorm(100)
   x <- rnorm(100)
