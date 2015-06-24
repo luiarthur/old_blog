@@ -12,10 +12,6 @@ nexttitle: Google
 
 #H1 Header
 
-    A chunk of code
-    A chunk of code
-    A chunk of code
-
 Here is a List:
 
   * Styling: *Italic*, **bold**, `monospace`
@@ -40,6 +36,14 @@ Here is a List:
 > "Go and love,  
 > go and love, young man."
 
-## a random h2 header
+## Here is some code: 
+
+    x <- rnorm(100)
+    y <- rnorm(100)
+    plot(x,y)
+
+Stuff to figure out:
+  - program syntax highlighting
+  - latex syntax conversion
 
 ![example image](/img/briar.jpg "An exemplary image")
