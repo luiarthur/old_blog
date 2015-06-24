@@ -49,3 +49,8 @@ image:
 
 
 ![example image](/img/briar.jpg)
+
+<pre><code class="R">
+  x <- rnorm(100)
+  x <- rnorm(100)
+</code></pre>
