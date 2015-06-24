@@ -63,5 +63,4 @@ for (i in 1:100) {
   - Styles:
     - *Italics* **bold** `monospace` 
 
-
 ![example image](/img/briar.jpg)
