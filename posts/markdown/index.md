@@ -41,17 +41,7 @@ image:
 
 ## Here is some code: 
 
-<pre style="padding:0"><code class="julia">
-include("aibp.jl") 
-
-b = inv(X'X)*(X'y)
-for i in 1:10
-  print("Some julia stuff")
-end
-</code></pre>
-
-
-<pre style="padding:0"><code>
+<pre style="padding:0"><code class="R">
 library(someRandomLibrary)
 
 x <- 1:100
