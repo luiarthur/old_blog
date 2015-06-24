@@ -40,10 +40,10 @@ image:
 
   - *program* **syntax** `highlighting`
   - latex syntax conversion
-      1. \alpha
+      1. \\alpha
       2. $$X'X^{-1}X'y$$
       3. $(x-a)(x-b)... (x-z) = ?$
 
 ![example image](/img/briar.jpg)
 
-\alpha\beta
+\\alpha\\beta
