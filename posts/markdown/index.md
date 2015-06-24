@@ -40,31 +40,6 @@ Here is a List:
 > "Go and love,  
 > go and love, young man."
 
-~~~R
-  # This is R code
-  x <- 1:5
-  for (y in x) y[x] <- x + 1
-  fun <- function(x) {
-    #do stuff in here
-  }
-~~~
-
-```R
-  # This is R code
-  x <- 1:5
-  for (y in x) y[x] <- x + 1
-  fun <- function(x) {
-    #do stuff in here
-  }
-```
-
-```ruby
-# This isruby code
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
 ## a random h2 header
 
 ![example image](/img/briar.jpg "An exemplary image")
