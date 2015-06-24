@@ -32,7 +32,10 @@
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <body>
-  \begin{bmatrix}{}  0.0 & 1.1 & 1.2 & 1.3 \\   1.1 & 0.0 & 1.4 & 1.5 \\   1.2 & 1.4 & 0.0 & 1.6 \\   1.3 & 1.5 & 1.6 & 0.0 \\   \end{bmatrix}
+
+{{page.Dmatrix}}
+<!--\begin{bmatrix}{}  0.0 & 1.1 & 1.2 & 1.3 \\   1.1 & 0.0 & 1.4 & 1.5 \\   1.2 & 1.4 & 0.0 & 1.6 \\   1.3 & 1.5 & 1.6 & 0.0 \\   \end{bmatrix}-->
+
   <!--myMAIN-->
   <script>
   /*Page Setup*/
@@ -57,7 +60,7 @@
 
   /* Read in Data and Plot */
   /*d3.tsv("sim.tsv", function(data) {*/
-  d3.tsv("ddibpdraws1.tsv", function(data) {
+      d3.tsv("{{page.title}}.tsv", function(data) {
     /* maps colors to each city */
       /* d3.keys(data[0]) gets the column headers*/
       /* d3.keys(data[0]).filter(etc) gets all all the column headers except the first one, "date"*/
@@ -70,10 +73,6 @@
       };
     });
 
-    /* Hard coded bounds: x,y-lim
-    x.domain([0,100]); y.domain([0,100]);
-    */
-
     /*dynamic x,y-lim
     x.domain(d3.extent(data, function(d) { return +d["tau"]; }));
     y.domain([
@@ -82,8 +81,8 @@
     ]);
     */
     /* x,y-lim set using R */
-    x.domain([0,10]);
-    y.domain([0.366793,0.666234]);
+    x.domain([{{page.xlimLo}},{page.xlimHi}]);
+    y.domain([{{page.ylimLo}},{page.ylimHi}]);
 
     /*debugger;*/
     /*Add x,y-axis*/
