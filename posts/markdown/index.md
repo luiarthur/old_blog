@@ -4,10 +4,11 @@ title: This is my markdown
 subtitle: Ya, it took 3 seconds.
 description: Creating my first markdown page.
 bannercolor: grey
-previousurl: yahoo.com
-previoustitle: yahoo!
-nexturl: google.com
-nexttitle: Google
+previousurl: /posts/cucumer/index.html
+previoustitle: Cucumber
+nexturl: /index.html
+nexttitle: Home
+image:
 ---
 
 #H1 Header
