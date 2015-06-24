@@ -39,10 +39,6 @@ Here is a List:
 > "Go and love, 
 > go and love, young man."
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
-
 ~~~R
   x <- 1:5
   for (y in x) y[x] <- x + 1
