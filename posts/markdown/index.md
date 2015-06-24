@@ -49,4 +49,4 @@ Stuff to figure out:
   - program syntax highlighting
   - latex syntax conversion
 
-![example image](/img/briar.jpg =100x100)
+![example image](/img/briar.jpg)
