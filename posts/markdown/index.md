@@ -44,7 +44,7 @@ Here is a List:
     plot(x,y)
 
 
-Stuff to figure out:
+### Stuff to figure out:
 
   - program syntax highlighting
   - latex syntax conversion
