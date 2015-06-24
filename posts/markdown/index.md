@@ -40,6 +40,7 @@ Here is a List:
 > go and love, young man."
 
 ~~~R
+  # This is R code
   x <- 1:5
   for (y in x) y[x] <- x + 1
   fun <- function(x) {
@@ -47,6 +48,11 @@ Here is a List:
   }
 ~~~
 
+```ruby
+# This isruby code
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 ![example image](/img/briar.jpg "An exemplary image")
-
-
