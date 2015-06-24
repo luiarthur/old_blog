@@ -3,6 +3,10 @@ layout: post
 title: This is my markdown
 subtitle: Ya, it took 3 seconds.
 bannercolor: #2D782D
+previousurl:
+previoustitle:
+nexturl:
+nexttitle:
 ---
 
 H1 Header
