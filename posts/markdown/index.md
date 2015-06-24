@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This is my markdown
-subtitle: yes, that's right
+subtitle: Ya, it took 3 seconds.
 ---
 
 H1 Header
