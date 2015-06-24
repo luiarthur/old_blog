@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: short
 title: This is my markdown
 subtitle: Ya, it took 3 seconds.
 description: Creating my first markdown page.
