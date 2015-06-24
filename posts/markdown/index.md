@@ -39,7 +39,7 @@ image:
 >
 > *William Butler Yeats*
 
-## Here is some code: 
+## R code: 
 
 <pre style="padding:0"><code class="R">
 library(someRandomLibrary)
