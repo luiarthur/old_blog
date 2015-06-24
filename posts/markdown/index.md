@@ -40,5 +40,8 @@ image:
 
   - *program* **syntax** `highlighting`
   - latex syntax conversion
+      1. \alpha
+      2. $$X'X^{-1}X'y$$
 
 ![example image](/img/briar.jpg)
+
