@@ -50,7 +50,7 @@ image:
 
 ![example image](/img/briar.jpg)
 
-<pre><code class="R">
+<pre style="padding:0"><code>
   x <- rnorm(100)
   x <- rnorm(100)
   x <- rnorm(100)
