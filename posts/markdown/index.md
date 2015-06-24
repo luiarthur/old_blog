@@ -32,6 +32,7 @@ image:
 ## Here is some code: 
 
 ```R
+# R code:
 x <- rnorm(100)
 y <- rnorm(100)
 plot(x,y)
