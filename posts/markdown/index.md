@@ -2,6 +2,7 @@
 layout: post
 title: This is my markdown
 subtitle: Ya, it took 3 seconds.
+description: Creating my first markdown page.
 bannercolor: grey
 previousurl: yahoo.com
 previoustitle: yahoo!
