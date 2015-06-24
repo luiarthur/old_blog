@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is my markdown
+subtitle: yes, that's right
 ---
 
 H1 Header
