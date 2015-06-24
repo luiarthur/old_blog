@@ -11,20 +11,7 @@ nexttitle: Home
 image:
 ---
 
-#H1 Header
-
-Here is a List:
-
-  * Styling: *Italic*, **bold**, `monospace`
-  * One Bullet
-  * Another bullet
-    * a sub bullet
-    * another sub bullet
-  * Regular bullet
-  * Another one
-    1. Yet another sub
-    2. Yet another sub
-
+# This is it
 [Markdown Example](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
 
 ***
@@ -46,7 +33,7 @@ Here is a List:
 
 ### Stuff to figure out:
 
-  - program syntax highlighting
+  - *program* **syntax** `highlighting`
   - latex syntax conversion
 
 ![example image](/img/briar.jpg)
