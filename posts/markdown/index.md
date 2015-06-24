@@ -31,25 +31,6 @@ image:
 
 ## Here is some code: 
 
-    # R code:
-    x <- rnorm(100)
-    y <- rnorm(100)
-    plot(x,y)
-
-
-## Other Stuff:
-
-  - latex syntax conversion
-      1. Greek letter: \\( \alpha \\)
-      2. Inline math: \\(X'X^{-1}X'y\\)
-      3. Display math: \\[X'X^{-1}X'y\\]
-      4. regular letters in math mode: \\((x-a)(x-b)... (x-z) = ?\\)
-  - need to figure out:
-    - *program* **syntax** `highlighting`
-
-
-![example image](/img/briar.jpg)
-
 <pre style="padding:0"><code>
 # 
 </code></pre>
@@ -64,3 +45,17 @@ for (i in 1:100) {
   y[i] <- 5 + x*2 + rnorm(1)
 }
 </code></pre>
+
+
+## Other Stuff:
+
+  - latex syntax conversion
+      1. Greek letter: \\( \alpha \\)
+      2. Inline math: \\(X'X^{-1}X'y\\)
+      3. Display math: \\[X'X^{-1}X'y\\]
+      4. regular letters in math mode: \\((x-a)(x-b)... (x-z) = ?\\)
+  - Styles:
+    - *Italics* **bold** `monospace` ~~strikethrough~~
+
+
+![example image](/img/briar.jpg)
