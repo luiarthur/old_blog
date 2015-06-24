@@ -32,8 +32,14 @@ image:
 ## Here is some code: 
 
 <pre style="padding:0"><code>
-# 
+include("aibp.jl") 
+
+b = inv(X'X)*(X'y)
+for i in 1:10
+  print("Some julia stuff")
+end
 </code></pre>
+
 
 <pre style="padding:0"><code>
 library(someRandomLibrary)
