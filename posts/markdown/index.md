@@ -4,7 +4,7 @@ title: This is my markdown
 subtitle: Ya, it took 3 seconds.
 description: Creating my first markdown page.
 bannercolor: grey
-previousurl: /posts/cucumer/index.html
+previousurl: /posts/cucumber/index.html
 previoustitle: Cucumber
 nexturl: /index.html
 nexttitle: Home
