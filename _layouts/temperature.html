@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<style>
-  body {
-    font: 10px sans-serif;
-  }
+  <head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font: 10px sans-serif;
+    }
 
-  .axis path,
-  .axis line {
-    fill: none; /*prevents default VERY BOLD axis line*/
-    stroke: #000;
-    shape-rendering: crispEdges; /*makes axis line thin and pretty*/
-  }
+    .axis path,
+    .axis line {
+      fill: none; /*prevents default VERY BOLD axis line*/
+      stroke: #000;
+      shape-rendering: crispEdges; /*makes axis line thin and pretty*/
+    }
 
-  .x.axis path {
-    display: none; /*removes axis line*/
-  }
+    .x.axis path {
+      display: none; /*removes axis line*/
+    }
 
-  .line {
-    fill: none;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-    opacity: 1;
-  }
-</style>
+    .line {
+      fill: none;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+      opacity: 1;
+    }
+  </style>
 
-<script src="http://d3js.org/d3.v3.js"></script>
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
 {{content}}
+{{Dmatrix}}
 
   <!--myMAIN-->
   <script>
