@@ -32,7 +32,7 @@ Here is a List:
 ***
 
 > I whispered, "I am too young", and then  
-> "I am old enough now"  
+> "I am old enough."  
 > wherefore, I threw a penny that I might know  
 > if I might love  
 > 
