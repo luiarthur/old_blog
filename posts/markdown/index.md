@@ -51,23 +51,16 @@ image:
 ![example image](/img/briar.jpg)
 
 <pre style="padding:0"><code>
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
+# 
 </code></pre>
 
 <pre style="padding:0"><code>
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
-  x <- rnorm(100)
+library(someRandomLibrary)
+
+x <- 1:100
+y <- NULL
+
+for (i in 1:100) {
+  y[i] <- 5 + x*2 + rnorm(1)
+}
 </code></pre>
