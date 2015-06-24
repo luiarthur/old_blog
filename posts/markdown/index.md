@@ -31,12 +31,12 @@ Here is a List:
 
 ***
 
-> I whispered, "I am too young", and then
-> "I am old enough now"
-> wherefore, I threw a penny that I might know
-> if I might love
+> I whispered, "I am too young", and then  
+> "I am old enough now"  
+> wherefore, I threw a penny that I might know  
+> if I might love  
 > 
-> "Go and love, 
+> "Go and love,  
 > go and love, young man."
 
 ~~~R
