@@ -48,6 +48,15 @@ Here is a List:
   }
 ~~~
 
+```R
+  # This is R code
+  x <- 1:5
+  for (y in x) y[x] <- x + 1
+  fun <- function(x) {
+    #do stuff in here
+  }
+```
+
 ```ruby
 # This isruby code
 require 'redcarpet'
