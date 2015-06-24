@@ -31,9 +31,11 @@ image:
 
 ## Here is some code: 
 
-    x <- rnorm(100)
-    y <- rnorm(100)
-    plot(x,y)
+```R
+x <- rnorm(100)
+y <- rnorm(100)
+plot(x,y)
+```
 
 
 ## Other Stuff:
