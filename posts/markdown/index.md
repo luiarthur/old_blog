@@ -64,10 +64,10 @@ for (i in 1:100) {
     - *Italics* **bold** `monospace` 
 
 ## Latex matrix
-\\[
+\\[\left(
   \begin{array}{rrr}
     1 & 2 & 3 & 4 \\\\
     5 & 6 & 7 & 8 \\\\
   \end{array}
-\\]
+\right)\\]
 ![example image](/img/briar.jpg)
