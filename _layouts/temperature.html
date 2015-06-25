@@ -100,6 +100,9 @@
       function mouseover(d, i) { d3.select(this).style("opacity",  "1"); };
       function mouseout(d, i)  { d3.select(this).style("opacity", ".3"); };
     /*End of Mouseover stuff*/
+
+    d3.selectAll("line").attr("x2","0");  
+    d3.selectAll("line").attr("y2","0");  
   });
 </script>
 </body>
