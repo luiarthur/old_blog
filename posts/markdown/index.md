@@ -65,7 +65,7 @@ for (i in 1:100) {
 
 ## Latex matrix
 \\[\left(
-  \begin{array}{rrr}
+  \begin{array}{rrrr}
     1 & 2 & 3 & 4 \\\\
     5 & 6 & 7 & 8 \\\\
   \end{array}
