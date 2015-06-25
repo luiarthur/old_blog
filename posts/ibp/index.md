@@ -20,8 +20,9 @@ title: aibp test
       \\)
 
 ***
-
+<div>
 <script type="text/javascript">
   draw("demoDat.tsv","tau");
 </script>
+</div>
 
