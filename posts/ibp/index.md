@@ -2,7 +2,7 @@
 layout: temperature
 ---
 
-###aIBP Draws (NEW5):
+###aIBP Draws (NEW6):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
@@ -23,3 +23,5 @@ layout: temperature
 <script type="text/javascript">
   draw("nopermdraws1.tsv","tau",0,10,0,.4);
 </script>
+
+###Some other comments
