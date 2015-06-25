@@ -7,7 +7,7 @@ ylimLo: 0
 ylimHi:10 
 ---
 
-# No permutation draws 8
+# No permutation draws 9
 
 \\[
   \begin{array}{rrrr}
