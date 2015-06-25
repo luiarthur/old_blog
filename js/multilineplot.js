@@ -1,7 +1,6 @@
 function draw(filename,xcol,xlo,xhi,ylo,yhi) {
   /*Page Setup:*/
-  //var margin = {top: 20, right: 80, bottom: 30, left: 50},
-  var margin = {top: 20, right: 80, bottom: 30, left: 400},
+  var margin = {top: 20, right: 80, bottom: 30, left: 50},
       width = (1000 - margin.left - margin.right),
       height = (width/2 - margin.top - margin.bottom);
   var svg = d3.select("body").append("svg")
