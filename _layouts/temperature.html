@@ -65,13 +65,13 @@
       });
 
       /* Setting x,y limits*/
-      if (xlo === undefined || xhi == undefined) {
+      if (xlo === undefined || xhi === undefined) {
         x.domain(d3.extent(data, function(d) { return +d[xcol]; }));
       } else {
         x.domain([xlo,xhi]);
       }
 
-      if (ylo === undefined || yhi == undefined) {
+      if (ylo === undefined || yhi === undefined) {
         y.domain([
           d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
           d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
