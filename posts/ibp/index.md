@@ -4,7 +4,6 @@ title: aibp test
 ---
 
 ###aIBP Draws (NEW18):
-Some text 1 2 3 4 5
 
 * \\(\small
       D = 
