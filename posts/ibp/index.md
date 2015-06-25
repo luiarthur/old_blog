@@ -9,7 +9,7 @@ ylimhi: .4
 
 ### No permutation draws 21
 
-\\[\small
+\\(\small
 D = 
 \left(
   \begin{array}{rrrr}
@@ -19,5 +19,5 @@ D =
     1.3 & 1.5 & 1.6 & 0.0
   \end{array}
 \right)
-\\]
+\\)
 
