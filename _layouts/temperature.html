@@ -31,7 +31,7 @@
   <!--myMAIN-->
   <script>
   /*Page Setup: HERE IS THE ORIGINAL*/
-  function draw(filename,xlo,xhi,ylo,yhi) {
+  function draw(filename,xcol,xlo,xhi,ylo,yhi) {
     var margin = {top: 20, right: 80, bottom: 30, left: 50},
         width = 1500 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
@@ -57,16 +57,16 @@
         /* d3.keys(data[0]) gets the column headers*/
         /* d3.keys(data[0]).filter(etc) gets all all the column headers except the first one, "date"*/
 
-      color.domain(d3.keys(data[0]).filter(function(key) { return key !== "tau"; }));
+      color.domain(d3.keys(data[0]).filter(function(key) { return key !== xcol; }));
       var curves = color.domain().map(function(name) {
         return {
           name: name,
-          values: data.map(function(d) { return {xval: +d["tau"], yval: +d[name]}; })
+          values: data.map(function(d) { return {xval: +d[xcol], yval: +d[name]}; })
         };
       });
 
       /*dynamic x,y-lim
-      x.domain(d3.extent(data, function(d) { return +d["tau"]; }));
+      x.domain(d3.extent(data, function(d) { return +d[xcol]; }));
       y.domain([
         d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
         d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
