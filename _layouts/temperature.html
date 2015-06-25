@@ -28,10 +28,9 @@
   <script src="http://d3js.org/d3.v3.js"></script>
   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-  <!--myMAIN-->
   <script>
-  /*Page Setup: HERE IS THE ORIGINAL*/
   function draw(filename,xcol,xlo,xhi,ylo,yhi) {
+    /*Page Setup:*/
     var margin = {top: 20, right: 80, bottom: 30, left: 50},
         width = 1500 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
@@ -51,7 +50,7 @@
         .x(function(d) { return x(d.xval); })
         .y(function(d) { return y(d.yval); });
 
-    /* Read in Data and Plot */
+      /* Read in Data and Plot */
       d3.tsv(filename, function(data) {
       /* maps colors to each city */
         /* d3.keys(data[0]) gets the column headers*/
@@ -65,16 +64,21 @@
         };
       });
 
-      /*dynamic x,y-lim
-      x.domain(d3.extent(data, function(d) { return +d[xcol]; }));
-      y.domain([
-        d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
-        d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
-      ]);
-      */
-      /* x,y-lim set using R */
-      x.domain([ xlo , xhi] );
-      y.domain([ ylo , yhi] );
+      /* Setting x,y limits*/
+      if (xlo === undefined || xhi == undefined) {
+        x.domain(d3.extent(data, function(d) { return +d[xcol]; }));
+      } else {
+        x.domain([xlo,xhi]);
+      }
+
+      if (ylo === undefined || yhi == undefined) {
+        y.domain([
+          d3.min(curves, function(c) { return d3.min(c.values, function(v) { return v.yval; }); }),
+          d3.max(curves, function(c) { return d3.max(c.values, function(v) { return v.yval; }); })
+        ]);
+      } else {
+        y.domain([ylo,yhi]);
+      }
 
       /*debugger;*/
       /*Add x,y-axis*/
@@ -102,7 +106,7 @@
       d3.selectAll("line").attr("y2","0");  
     });
   }
-</script>
+  </script>
 </head>
 
 <body>

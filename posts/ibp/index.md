@@ -22,6 +22,7 @@ layout: temperature
 
 <script type="text/javascript">
   draw("demoDat.tsv","tau",0,10,0,.4);
+  draw("demoDat.tsv","tau");
 </script>
 
 ###Some other comments
