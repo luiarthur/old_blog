@@ -8,11 +8,11 @@ function draw(filename,xcol,div,xlo,xhi,ylo,yhi) {
     div = "body";
   } else {
     margin = {top: 0, right: 0, bottom: 0, left: 0};
-    width = d3.select("#"+div).node().getBoundingClientRect().width;
+    width = d3.select(div).node().getBoundingClientRect().width;
     height = width/2;
   }
    
-  var svg = d3.select("#"+div).append("svg")
+  var svg = d3.select(div).append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
