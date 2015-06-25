@@ -1,13 +1,8 @@
 ---
 layout: temperature
-filename: nopermdraws1
-xlimlo: 0
-xlimhi: 10
-ylimlo: 0
-ylimhi: .4
 ---
 
-###aIBP Draws (NEW3):
+###aIBP Draws (NEW4):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
@@ -26,5 +21,5 @@ ylimhi: .4
 ***
 
 <script type="text/javascript">
-  draw("nopermdraws1.tsv");
+  draw("nopermdraws1.tsv",0,10,0,.4);
 </script>

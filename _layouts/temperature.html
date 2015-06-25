@@ -31,7 +31,7 @@
   <!--myMAIN-->
   <script>
   /*Page Setup: HERE IS THE ORIGINAL*/
-  function draw(filename) {
+  function draw(filename,xlo,xhi,ylo,yhi) {
     var margin = {top: 20, right: 80, bottom: 30, left: 50},
         width = 1500 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
@@ -52,7 +52,6 @@
         .y(function(d) { return y(d.yval); });
 
     /* Read in Data and Plot */
-      /*d3.tsv("{{page.filename}}.tsv", function(data) {*/
       d3.tsv(filename, function(data) {
       /* maps colors to each city */
         /* d3.keys(data[0]) gets the column headers*/
@@ -74,8 +73,8 @@
       ]);
       */
       /* x,y-lim set using R */
-      x.domain([ {{page.xlimlo}}0 , {{page.xlimhi}}] );
-      y.domain([ {{page.ylimlo}}0 , {{page.ylimhi}}] );
+      x.domain([ xlo , xhi] );
+      y.domain([ ylo , yhi] );
 
       /*debugger;*/
       /*Add x,y-axis*/
