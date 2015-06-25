@@ -7,7 +7,7 @@ ylimlo: 0
 ylimhi: .4
 ---
 
-aIBP Draws: 
+###aIBP Draws: 
 
 * \\(\alpha=1\\)
 * \\(\sigma=(1,2,3,4)\\)
@@ -22,4 +22,5 @@ aIBP Draws:
         \end{array}
       \right)
       \\)
+
 ***
