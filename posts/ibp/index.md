@@ -3,7 +3,7 @@ layout: temperature
 title: aibp test
 ---
 
-###aIBP Draws (NEW20):
+###aIBP Draws (NEW21):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
@@ -25,4 +25,3 @@ title: aibp test
 <script type="text/javascript">
   draw("demoDat.tsv","tau","myPlot");
 </script>
-
