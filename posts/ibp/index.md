@@ -3,7 +3,7 @@ layout: temperature
 title: aibp test
 ---
 
-###aIBP Draws (NEW18):
+###aIBP Draws (NEW19):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
@@ -20,9 +20,9 @@ title: aibp test
       \\)
 
 ***
-<div>
-  <script type="text/javascript">
-    draw("demoDat.tsv","tau");
-  </script>
-</div>
+
+<div id="mlPlot"> </div>
+<script type="text/javascript">
+  draw("demoDat.tsv","tau");
+</script>
 

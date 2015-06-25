@@ -1,9 +1,13 @@
-function draw(filename,xcol,xlo,xhi,ylo,yhi) {
+function draw(filename,xcol,div,xlo,xhi,ylo,yhi) {
   /*Page Setup:*/
   var margin = {top: 20, right: 80, bottom: 30, left: 50},
       width = (1000 - margin.left - margin.right),
       height = (width/2 - margin.top - margin.bottom);
-  var svg = d3.select("body").append("svg")
+
+  if (div === undefined) {
+    div = "body";
+  }
+  var svg = d3.select(div).append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
