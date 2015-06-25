@@ -3,7 +3,7 @@ function draw(filename,xcol,xlo,xhi,ylo,yhi) {
   //var margin = {top: 20, right: 80, bottom: 30, left: 50},
   var margin = {top: 20, right: 80, bottom: 30, left: 400},
       width = (1000 - margin.left - margin.right),
-      height = (500 - margin.top - margin.bottom);
+      height = (width/2 - margin.top - margin.bottom);
   var svg = d3.select("body").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
