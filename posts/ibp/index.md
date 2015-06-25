@@ -9,7 +9,7 @@ ylimhi: .4
 
 ### No permutation draws 21
 
-\\[\tiny
+\\[\small
 D = 
 \left(
   \begin{array}{rrrr}
