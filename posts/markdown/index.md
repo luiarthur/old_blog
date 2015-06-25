@@ -63,6 +63,7 @@ for (i in 1:100) {
   - Styles:
     - *Italics* **bold** `monospace` 
 
+## Latex matrix
 \\[
   \begin{array}{rrr}
     1 & 2 & 3 & 4 \\\\
