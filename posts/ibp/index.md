@@ -26,5 +26,5 @@ ylimhi: .4
 ***
 
 <script type="text/javascript">
-  draw(nopermdraws1);
+  draw("nopermdraws1.tsv");
 </script>
