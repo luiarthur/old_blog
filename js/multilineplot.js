@@ -5,9 +5,9 @@ function draw(filename,xcol,xlo,xhi,ylo,yhi) {
       height = (500 - margin.top - margin.bottom);
   var svg = d3.select("body").append("svg")
       .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom);
-    //.append("g")
-    //  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
   /* End of page setup*/
 
   var x = d3.scale.linear().range([0, width]);
