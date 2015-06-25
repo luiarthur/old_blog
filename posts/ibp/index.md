@@ -2,7 +2,7 @@
 layout: temperature
 ---
 
-###aIBP Draws (NEW6):
+###aIBP Draws (NEW7):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
