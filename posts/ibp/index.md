@@ -1,8 +1,12 @@
 ---
 layout: temperature
+xlimlo: 0
+xlimhi: 10
+ylimlo: 0
+ylimhi: .4
 ---
 
-# No permutation draws 14
+# No permutation draws 15
 
 \\[
   \begin{array}{rrrr}
