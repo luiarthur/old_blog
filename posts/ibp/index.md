@@ -1,6 +1,6 @@
 ---
 layout: temperature
-title: nopermdraws1
+title:nopermdraws1
 xlimLo: 0
 xlimHi:10 
 ylimLo: 0
