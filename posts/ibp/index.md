@@ -21,9 +21,6 @@ Some text 1 2 3 4 5
 
 ***
 
-<script src="http://d3js.org/d3.v3.js" ></script>
-<script src="/js/multilineplot.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/multilineplot.css" />
 <script type="text/javascript">
   draw("demoDat.tsv","tau",0,10,0,.4);
 </script>
