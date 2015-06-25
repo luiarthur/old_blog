@@ -1,5 +1,6 @@
 ---
 layout: temperature
+title: aibp test
 ---
 
 ###aIBP Draws (NEW16):
