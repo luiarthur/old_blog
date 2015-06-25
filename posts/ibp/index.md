@@ -6,7 +6,7 @@ ylimlo: 0
 ylimhi: .4
 ---
 
-# No permutation draws 15
+# No permutation draws 16
 
 \\[
   \begin{array}{rrrr}
