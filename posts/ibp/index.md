@@ -3,7 +3,6 @@ layout: temperature
 title: aibp test
 ---
 
-<div class="col-md-2">
 ###aIBP Draws (NEW24):
 
 * \\(\alpha= \small 1
@@ -21,9 +20,8 @@ title: aibp test
       \\)
 
 ***
-</div>
 
-<div id="mlPlot" class="col-md-10"></div>
+<div id="mlPlot""></div>
 <script type="text/javascript">
   draw("demoDat.tsv","tau","#mlPlot");
 </script>
