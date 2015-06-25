@@ -5,6 +5,7 @@ title: aibp test
 
 ###aIBP Draws (NEW18):
 
+* \\(\alpha= \small 1\\)
 * \\(\small
       D = 
       \left(
@@ -16,7 +17,6 @@ title: aibp test
         \end{array}
       \right)
       \\)
-* \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
 
 ***
