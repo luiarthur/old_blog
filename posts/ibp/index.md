@@ -7,7 +7,7 @@ ylimlo: 0
 ylimhi: .4
 ---
 
-###aIBP Draws (NEW2):
+###aIBP Draws (NEW3):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
