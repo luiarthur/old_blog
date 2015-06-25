@@ -63,4 +63,10 @@ for (i in 1:100) {
   - Styles:
     - *Italics* **bold** `monospace` 
 
+\\[
+  \begin{array}{rrr}
+    1 & 2 & 3 & 4 \\\\
+    5 & 6 & 7 & 8 \\\\
+  \end{array}
+\\]
 ![example image](/img/briar.jpg)
