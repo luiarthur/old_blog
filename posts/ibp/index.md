@@ -1,12 +1,13 @@
 ---
 layout: temperature
+filename: nopermdraws1
 xlimlo: 0
 xlimhi: 10
 ylimlo: 0
 ylimhi: .4
 ---
 
-### No permutation draws 17
+### No permutation draws 18
 
 \\[
 D = 
