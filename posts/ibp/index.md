@@ -8,9 +8,7 @@ ylimhi: .4
 ---
 
 ### No permutation draws 21
-
----
-
+***
 \\(\small
 D = 
 \left(
@@ -22,5 +20,4 @@ D =
   \end{array}
 \right)
 \\)
-
----
+***
