@@ -10,7 +10,7 @@ ylimhi: .4
 ###aIBP Draws: 
 
 * \\(\alpha= \small 1\\)
-* \\(\sigma= \small (1,2,3,4)\\)
+* \\(\sigma= \small (1,2,3,4)\\)  
 * \\(\small
       D = 
       \left(
