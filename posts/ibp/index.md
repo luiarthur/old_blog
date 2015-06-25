@@ -1,5 +1,5 @@
 ---
-layout: temperature
+layout: post
 title:nopermdraws1
 xlimLo: 0
 xlimHi:10 
