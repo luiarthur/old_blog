@@ -6,7 +6,7 @@ ylimlo: 0
 ylimhi: .4
 ---
 
-# No permutation draws 17
+### No permutation draws 17
 
 \\[
 D = 
