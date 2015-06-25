@@ -4,8 +4,6 @@ layout: temperature
 
 ###aIBP Draws (NEW10):
 
-* \\(\alpha= \small 1\\)
-* \\(\sigma= \small (1,2,3,4)\\)
 * \\(\small
       D = 
       \left(
@@ -17,17 +15,13 @@ layout: temperature
         \end{array}
       \right)
       \\)
+* \\(\alpha= \small 1\\)
+* \\(\sigma= \small (1,2,3,4)\\)
 
 ***
 
 <script type="text/javascript">
   draw("demoDat.tsv","tau",0,10,0,.4);
-</script>
-
-***
-
-<script type="text/javascript">
-  draw("demoDat.tsv","tau",undefined,undefined,0,.2);
 </script>
 
 ###Some other comments
