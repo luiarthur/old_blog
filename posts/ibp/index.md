@@ -9,8 +9,8 @@ ylimhi: .4
 
 ###aIBP Draws: 
 
-* \\(\alpha=1\\)
-* \\(\sigma=(1,2,3,4)\\)
+* \\(\small \alpha=1\\)
+* \\(\small \sigma=(1,2,3,4)\\)
 * \\(\small
       D = 
       \left(
