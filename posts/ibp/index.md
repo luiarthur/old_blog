@@ -5,7 +5,7 @@ title: aibp test
 
 ###aIBP Draws (NEW24):
 
-* \\(\alpha= \small 1
+* \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
 * \\(\small
       D = 
