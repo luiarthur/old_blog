@@ -1,6 +1,6 @@
 ---
 layout: temperature
-title: aibp test3
+title: aibp test4
 alpha: "1"
 sigma: "(1,2,3,4)"
 D: "\\left( \\begin{array}{rrrr}
