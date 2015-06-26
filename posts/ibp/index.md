@@ -4,7 +4,7 @@ title: aibp test
 ---
 
 ###aIBP Draws (NEW25):
-<div>
+
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
 * \\(\small
@@ -18,7 +18,6 @@ title: aibp test
         \end{array}
       \right)
       \\)
-</div>
 
 ***
 
