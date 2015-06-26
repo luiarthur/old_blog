@@ -16,6 +16,7 @@ image:
 
 ***
 
+<!-- Javascript: -->
 <script type="text/javascript">
   draw("demoDat.tsv","tau","#mlPlot");
 </script>
