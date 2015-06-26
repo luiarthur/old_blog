@@ -24,10 +24,12 @@
 }
 .upic {
   border-radius: 50%;
-  margin-left: 15px;
   position:absolute;
-  left:0;
   width:50px;
+  /*
+  margin-left: 15px;
+  left:0;
+  */
 }
 .oCom {
   margin-left:50px;
