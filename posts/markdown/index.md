@@ -8,6 +8,7 @@ previousurl: /posts/cucumber/index.html
 previoustitle: Cucumber
 nexturl: /index.html
 nexttitle: Home
+permalink: /markdown/
 image:
 ---
 
