@@ -4,7 +4,7 @@ title: aibp test
 alpha: "\\( \\alpha=1 \\) sick"
 ---
 
-###aIBP Draws (NEW27):
+###aIBP Draws (NEW28):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
