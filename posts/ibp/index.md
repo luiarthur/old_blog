@@ -1,10 +1,10 @@
 ---
 layout: temperature
 title: aibp test
-alpha: "\\(\alpha=1\\) sick"
+alpha: "\(\alpha=1\) sick"
 ---
 
-###aIBP Draws (NEW26):
+###aIBP Draws (NEW27):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
