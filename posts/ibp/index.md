@@ -14,7 +14,7 @@ D: "\\(\\small
         \\end{array} \\right) \\)"
 ---
 
-###aIBP Draws (NEW29):
+###aIBP Draws (NEW30):
 
 * \\(\alpha= \small 1\\)
 * \\(\sigma= \small (1,2,3,4)\\)
