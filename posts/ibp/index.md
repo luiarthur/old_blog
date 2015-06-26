@@ -3,7 +3,7 @@ layout: temperature
 title: aibp test
 alpha: "\\( \\alpha=1 \\)"
 sigma: "\\( \\sigma=(1,2,3,4)\\)"
-D: "\\(\small
+D: "\\(\\small
       D = 
       \\left(
         \\begin{array}{rrrr}
