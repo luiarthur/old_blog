@@ -9,7 +9,7 @@ D: "\\left( \\begin{array}{rrrr}
       1.2 & 1.4 & 0.0 & 1.6 \\\\
       1.3 & 1.5 & 1.6 & 0.0
     \\end{array} \\right)"
-image:
+permalink: /ibp/
 ---
 
 <div id="mlPlot""></div>
