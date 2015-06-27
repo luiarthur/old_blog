@@ -1,6 +1,7 @@
 ---
 layout: temperature
 title: aibp test5
+filename: "demoDat.tsv"
 alpha: "1"
 sigma: "(1,2,3,4)"
 D: "\\left( \\begin{array}{rrrr}
@@ -13,7 +14,4 @@ image:
 ---
 
 
-<!-- Javascript: -->
-<script type="text/javascript">
-  draw("demoDat.tsv","tau","#mlPlot");
-</script>
+
