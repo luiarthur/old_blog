@@ -12,7 +12,7 @@ D: "\\left( \\begin{array}{rrrr}
 image:
 ---
 
-<div id="mlPlot""></div>
+<div id="mlPlot"></div>
 
 
 <!-- Javascript: -->
