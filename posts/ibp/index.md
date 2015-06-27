@@ -14,7 +14,6 @@ image:
 
 <div id="mlPlot""></div>
 
-***
 
 <!-- Javascript: -->
 <script type="text/javascript">
