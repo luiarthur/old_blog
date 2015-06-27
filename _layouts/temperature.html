@@ -80,7 +80,7 @@
                 </ul>
             </div>      
             <div class="col-lg-8 col-md-7">
-                <div id="mlPlot"></div>
+                <div id="multilinePlot"></div>
             </div>
             {{content}}
             <!--Comments-->
@@ -93,5 +93,9 @@
       <div id="includeFooter"></div>
     </footer>
 
+  <!-- Javascript: -->
+  <script type="text/javascript">
+    draw("demoDat.tsv","tau","#multilinePlot");
+  </script>
   </body>
 </html>
