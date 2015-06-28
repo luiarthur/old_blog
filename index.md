@@ -12,15 +12,15 @@ subtitle: "Bayesian Statistics / Computing"
 #### - June 24, 2015
 ***
 
-##   Cucumber
+##   [Cucumber](/posts/cucumber)
 ###  A minimalist commenting system
 #### - May 20, 2014
 ***
 
-##   Comparing Programming Languages for Statistics
+##   [Comparing Programming Languages for Statistics](/posts/langcompare)
 ###  R / Go / C / C++ / Scala / Julia?
 #### May 13, 2015
 ***
 
-##   Starting a Blog
+##   [Starting a Blog](/posts/startblog)
 #### May 13, 2015
