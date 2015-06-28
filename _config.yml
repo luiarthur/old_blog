@@ -6,6 +6,6 @@ defaults:
      path: ""
    values: 
      layout: "default"
-     bannercolor: "rgb(136,48,48)"
-     temp: "#FF9933"
+     bannercolor: "#FF9933"
+     maroon: "rgb(136,48,48)"
      
