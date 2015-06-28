@@ -17,4 +17,3 @@ image:
 
 ### Here is some Content
 
-***
