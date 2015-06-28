@@ -7,5 +7,5 @@ subtitle: "Bayesian Statistics / Computing"
 ---
 
 # Switching to Markdown
-It only takes a minute
+It only takes a minute  
 *June 24, 2015*
