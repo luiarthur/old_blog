@@ -7,4 +7,7 @@ defaults:
    values: 
      layout: "default"
      bannercolor: "grey"
+     bannerimage: ""
      maroon: "rgb(136,48,48)"
+     title: "luiarthur.github.io"
+     author: "Arthur Lui"
