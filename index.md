@@ -7,6 +7,6 @@ subtitle: "Bayesian Statistics / Computing"
 ---
 <link href="/css/home.css" rel="stylesheet">
 
-##  Switching to Markdown    
-### It only takes a minute  
+##  [Switching to Markdown](/posts/markdown)
+### It only takes a minute
 #### - June 24, 2015
