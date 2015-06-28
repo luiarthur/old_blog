@@ -94,12 +94,17 @@
 
                 <!-- Pager -->
                 <ul class="pager">
+                    {% if page.previousurl %}
                     <li class="previous">
                       <a href='{{page.previousurl}}'>&larr;{{page.previoustitle}}</a>
                     </li>
+                    {% endif%}
+
+                    {% if page.nexturl %}
                     <li class="next">
                       <a href='{{page.nexturl}}'>&rarr;{{page.nexttitle}}</a>
                     </li>    
+                    {% endif%}
                   </ul>
             </div>
         </div>
