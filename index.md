@@ -9,4 +9,4 @@ subtitle: "Bayesian Statistics / Computing"
 
 ##  Switching to Markdown    
 ### It only takes a minute  
-Posted on *June 24, 2015*
+#### June 24, 2015
