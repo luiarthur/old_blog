@@ -15,5 +15,5 @@ image:
 
 <!-- Javascript: -->
 <script type="text/javascript">
-  draw("{{page.filename}}.tsv","tau","#multilinePlot");
+  draw("demoDat.tsv","tau","#multilinePlot");
 </script>
