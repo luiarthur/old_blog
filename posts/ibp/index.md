@@ -1,6 +1,6 @@
 ---
 layout: temperature
-title: aibp test5
+title: aibp test6
 filename: demoDat
 alpha: 1
 sigma: "(1,2,3,4)"
