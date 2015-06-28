@@ -11,5 +11,12 @@ subtitle: "Bayesian Statistics / Computing"
 ### It only takes a minute
 #### - June 24, 2015
 
+***
+
 #   Cucumber
 ##  A minimalist commenting system
+### - May 20, 2014
+
+*** 
+
+# Comparing Programming Languages for Statistics
