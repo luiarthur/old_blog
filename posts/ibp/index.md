@@ -1,6 +1,6 @@
 ---
 layout: temperature
-title: aibp test6
+title: aibp test7
 filename: demoDat
 alpha: 1
 sigma: "(1,2,3,4)"
@@ -13,3 +13,7 @@ D: "\\left( \\begin{array}{rrrr}
 image:
 ---
 
+<!-- Javascript: -->
+<script type="text/javascript">
+  draw("{{page.filename}}.tsv","tau","#multilinePlot");
+</script>
