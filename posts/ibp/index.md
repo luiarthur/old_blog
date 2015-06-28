@@ -13,4 +13,3 @@ D: "\\left( \\begin{array}{rrrr}
 image:
 ---
 
-This is just some content
