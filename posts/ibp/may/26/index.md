@@ -1,6 +1,5 @@
 ---
 layout: default
-bannercolor: "#FF9933"
 ---
 
 
