@@ -6,6 +6,8 @@ title: Arthur Lui
 subtitle: "Bayesian Statistics / Computing"
 ---
 
+<div class="post-preview">
 # Switching to Markdown
 It only takes a minute  
 *June 24, 2015*
+</div>
