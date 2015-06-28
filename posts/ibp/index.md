@@ -2,7 +2,7 @@
 layout: temperature
 title: aibp test5
 filename: demoDat
-alpha: "1"
+alpha: 1
 sigma: "(1,2,3,4)"
 D: "\\left( \\begin{array}{rrrr}
       0.0 & 1.1 & 1.2 & 1.3 \\\\
