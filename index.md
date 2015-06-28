@@ -16,7 +16,11 @@ subtitle: "Bayesian Statistics / Computing"
 #   Cucumber
 ##  A minimalist commenting system
 ### - May 20, 2014
-
 *** 
 
-# Comparing Programming Languages for Statistics
+#   Comparing Programming Languages for Statistics
+##  R / Go / C / C++ / Scala / Julia?
+### May 13, 2015
+***
+
+# 
