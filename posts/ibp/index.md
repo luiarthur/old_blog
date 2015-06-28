@@ -13,7 +13,6 @@ D: "\\left( \\begin{array}{rrrr}
 image:
 ---
 
-*** 
-
 ### Here is some Content
 
+Test content
