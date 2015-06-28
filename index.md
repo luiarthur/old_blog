@@ -1,7 +1,8 @@
 ---
 layout: post
 bannerimage: ""
-title: "<h1> <img src='https://avatars.githubusercontent.com/u/5297817?v=3'> <h1>"
+titleimage: "<img src='https://avatars.githubusercontent.com/u/5297817?v=3' style=''>"
+title: "Arthur Lui"
 ---
 
 
