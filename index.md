@@ -19,8 +19,8 @@ subtitle: "Bayesian Statistics / Computing"
 
 ##   [Comparing Programming Languages for Statistics](/posts/langcompare)
 ###  R / Go / C / C++ / Scala / Julia?
-#### May 13, 2015
+#### - May 13, 2015
 ***
 
 ##   [Starting a Blog](/posts/startblog)
-#### May 13, 2015
+#### - May 13, 2015
