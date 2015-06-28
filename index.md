@@ -7,7 +7,7 @@ subtitle: "Bayesian Statistics / Computing"
 ---
 
 <div class="post-preview">
-# Switching to Markdown
+<h2 class='post-title'> Switching to Markdown </h1>
 It only takes a minute  
 *June 24, 2015*
 </div>
