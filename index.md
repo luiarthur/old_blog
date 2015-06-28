@@ -5,6 +5,7 @@ titleimage: "<img src='https://avatars.githubusercontent.com/u/5297817?v=3' styl
 title: Arthur Lui
 subtitle: "Bayesian Statistics / Computing"
 ---
+<link href="/css/home.css" rel="stylesheet">
 
 ##  Switching to Markdown    
 ### It only takes a minute  
