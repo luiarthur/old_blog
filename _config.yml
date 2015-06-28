@@ -1,1 +1,11 @@
 markdown: redcarpet
+
+defaults: 
+  - 
+   scope:
+     path: ""
+     type: "posts"
+   values: 
+     layout: "default"
+     bannercolor: "#FF9933"
+     
