@@ -89,4 +89,11 @@ users can write comments. Furthermore, you can only edit and remove your own
 comments.
 <div><img class="eg" src="img/rules.png"></div>
 
+## Login & Authentication
+Next, go to the "Login & Authentication" tab. To add Cucumber to your site, you
+will need to enter your website's URL. Just the homepage will do. At the bottom
+of the page, go through each of the tabs and enable the services you want. The
+screen below is what your page should look like for enabling Google
+authentication.
+<div><img class='eg'src='img/authLogin.png'></div>
 
