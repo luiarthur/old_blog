@@ -65,7 +65,15 @@ coded.
   <button type="button" class="s btn btn-default">Scala</button>
   <button type="button" class="c btn btn-default">C++</button>
 </div>
-<div id="includeChosenCode"></div>
+
+<div id="includeChosenCode">
+  <pre style="padding:0"><code class="R">
+  dat <- as.matrix(read.table("../data/dat.txt"))
+  y <- dat[,1]
+  X <- dat[,-1]
+  k <- ncol(X)
+  </code></pre>
+</div>
 
 <script> 
 $(document).ready(function(){
