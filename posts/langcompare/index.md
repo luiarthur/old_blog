@@ -74,5 +74,3 @@ $(document).ready(function(){
   $("button.c").click(function(){$("#includeChosenCode").load("Code/cpp.html");});
 });
 </script>
-
-##WHAT now?
