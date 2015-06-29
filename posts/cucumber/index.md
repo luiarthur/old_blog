@@ -4,6 +4,10 @@ bannercolor: "#2D782D"
 descriptions: "Cucumber, a simple minimalist commenting system, open source, and still in development..."
 title: Cucumber
 subtitle: A Minimalist Commenting System
+previousurl: "/posts/langcompare"
+previoustitle: Language Comparisons
+nexturl: "/posts/markdown"
+nextitle: First Markdown
 ---
 
 Cucumber is a minimalist commenting system. It is still in the works...  As of
