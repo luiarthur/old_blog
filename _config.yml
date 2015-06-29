@@ -11,4 +11,4 @@ defaults:
      maroon: "rgb(136,48,48)"
      title: "luiarthur.github.io"
      author: "Arthur Lui"
-     titlesize: 1
+     titlesize: "1"
