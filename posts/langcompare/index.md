@@ -75,9 +75,9 @@ k <- ncol(X)
 n <- length(y)
 colnames(X) <- paste0("b",0:9)
 Xt <- t(X)
-XXi <- solve(Xt%*%X)
+XXi <- solve(Xt %*% X)
 s <- 100
-XXi%*%Xt%*%y
+XXi %*% Xt %*% y
 a <- 1
 b <- 1
 B <- 1e5
