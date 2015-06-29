@@ -45,9 +45,7 @@ work-arounds that I want to blog about when I get to it.
 I've included the code at the bottom of this page so you can check out what I
 coded.
 
-<a href="/posts/langcompare/img/speed.svg">
-  <img class="img-responsive" src="/posts/langcompare/img/speed.svg" alt="">
-</a>
+![Speed Comparison](/posts/langcompare/img/speed.svg)
 <span class="caption text-muted">C++ wins in execution time.</span>
 ***
 
