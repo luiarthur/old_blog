@@ -20,7 +20,7 @@ higher productivity. I checked out C, C++, Go, Scala, and Julia. And since my
 computational work is usually Bayesian, I created my own criteria for judging
 performance — a standard Bayesian multiple linear regression algorithm.
 
-\\[\begin{array}{rrr}
+\\[\begin{array}{rcl}
    y|\beta & \sim & Normal(X\beta,\sigma^2I) \\\\
      \beta & \sim & Normal(0,100(X'X)^{-1}) \\\\
   \sigma^2 & \sim & Gamma(1,1) \\\\
