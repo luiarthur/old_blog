@@ -5,7 +5,7 @@ title: About Me
 subtitle: History
 ---
 
-I grew up in Hong Kong. I developed a an interest for mathematics and a love
+I grew up in Hong Kong and developed an interest for mathematics and a love
 for classical music in high school.
 
 In Brigham Young University - Hawaii (2007), I studied piano with Stacey
