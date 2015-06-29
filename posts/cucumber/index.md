@@ -50,6 +50,8 @@ set of rules, you can allow authenticated users to write comments, and edit
 their own comments, and prevent users from editing other users' comments. The
 set of rules I used are:
 
+<div id="cucumberRules"></div>
+
 To add rules, just navigate to "Security and Rules" tab, on your app, and paste
 the rules. My rules allow the world to view comments, but only authenticated
 users can write comments. Furthermore, you can only edit and remove your own
