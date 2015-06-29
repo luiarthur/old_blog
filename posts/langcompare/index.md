@@ -45,20 +45,20 @@ work-arounds that I want to blog about when I get to it.
 I've included the code at the bottom of this page so you can check out what I
 coded.
 
-                  <a href="/posts/langcompare/img/speed.svg">
-                        <img class="img-responsive" src="/posts/langcompare/img/speed.svg" alt="">
-                    </a>
-                    <span class="caption text-muted">C++ wins in execution time.</span>
-                    <hr>
-                    <p></p>
-                    <a href="/posts/langcompare/img/lines.svg">
-                        <img class="img-responsive" src="/posts/langcompare/img/lines.svg" alt="">
-                    </a>
-                    <span class="caption text-muted">R wins marginally in conciseness.</span>
-                    <hr>
-                    <p></p>
-                    <a href="/posts/langcompare/img/lines.svg">
-                        <img class="img-responsive" src="/posts/langcompare/img/vs.svg" alt="">
-                    </a>
-                    <span class="caption text-muted">We want things to be in the bottom left quadrant &mdash;  Julia wins that one.</span>
-                    <hr>
+<a href="/posts/langcompare/img/speed.svg">
+  <img class="img-responsive" src="/posts/langcompare/img/speed.svg" alt="">
+</a>
+<span class="caption text-muted">C++ wins in execution time.</span>
+***
+
+<a href="/posts/langcompare/img/lines.svg">
+    <img class="img-responsive" src="/posts/langcompare/img/lines.svg" alt="">
+</a>
+<span class="caption text-muted">R wins marginally in conciseness.</span>
+***
+
+<a href="/posts/langcompare/img/lines.svg">
+    <img class="img-responsive" src="/posts/langcompare/img/vs.svg" alt="">
+</a>
+<span class="caption text-muted">We want things to be in the bottom left quadrant &mdash;  Julia wins that one.</span>
+***
