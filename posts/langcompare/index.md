@@ -65,7 +65,6 @@ coded.
   <button type="button" class="c btn btn-default">C++</button>
 </div>
 <div id="includeChosenCode"></div>
-***
 
 <script> 
 $(document).ready(function(){
