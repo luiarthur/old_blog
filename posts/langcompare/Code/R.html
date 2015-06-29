@@ -1,6 +1,4 @@
-<pre style="padding:0"><code class="R">
-dat <- as.matrix(read.table("../data/dat.txt"))
-
+<pre style="padding:0"><code class="R">dat <- as.matrix(read.table("../data/dat.txt"))
 y <- dat[,1]
 X <- dat[,-1]
 k <- ncol(X)
@@ -55,5 +53,4 @@ for (i in 2:B) {
   cat(paste0("\r",round(100*i/B),"%"))
 }
 )
-#meh
 </code></pre>
