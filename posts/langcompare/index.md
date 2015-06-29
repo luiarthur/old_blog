@@ -67,7 +67,11 @@ coded.
 <div id="includeChosenCode"></div>
 ***
 
-<script> $(document).ready(function(){$("button.r").click(function(){$("#includeChosenCode").load("Code/R.html");});});</script>
-<script> $(document).ready(function(){$("button.j").click(function(){$("#includeChosenCode").load("Code/julia.html");});});</script>
-<script> $(document).ready(function(){$("button.s").click(function(){$("#includeChosenCode").load("Code/scala.html");});});</script>
-<script> $(document).ready(function(){$("button.c").click(function(){$("#includeChosenCode").load("Code/cpp.html");});});</script>
+<script> 
+$(document).ready(function(){
+  $("button.r").click(function(){$("#includeChosenCode").load("Code/R.html");});
+  $("button.j").click(function(){$("#includeChosenCode").load("Code/julia.html");});
+  $("button.s").click(function(){$("#includeChosenCode").load("Code/scala.html");});
+  $("button.c").click(function(){$("#includeChosenCode").load("Code/cpp.html");});
+});
+</script>
