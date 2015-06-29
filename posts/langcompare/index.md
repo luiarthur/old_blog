@@ -70,8 +70,7 @@ coded.
 
 <script> 
 $(document).ready(function(){
-  //$("button.r").click(function(){$("#includeChosenCode").load("Code/R.html");});
-  $("button.r").click(function(){$("#R").show();});
+  $("button.r").click(function(){$("#includeChosenCode").load("Code/R.html");});
   $("button.j").click(function(){$("#includeChosenCode").load("Code/julia.html");});
   $("button.s").click(function(){$("#includeChosenCode").load("Code/scala.html");});
   $("button.c").click(function(){$("#includeChosenCode").load("Code/cpp.html");});
