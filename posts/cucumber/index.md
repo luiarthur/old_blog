@@ -57,3 +57,6 @@ the rules. My rules allow the world to view comments, but only authenticated
 users can write comments. Furthermore, you can only edit and remove your own
 comments.
 <div><img class="eg" src="img/rules.png"></div>
+
+<script>$(document).ready(function(){$("#cucumberRules").load("cucumberRules.html");});</script>
+
