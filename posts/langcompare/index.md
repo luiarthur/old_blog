@@ -67,7 +67,7 @@ coded.
 </div>
 
 <div id="includeChosenCode">
-<pre style="padding:0"><code class="R">
+<pre style="padding:0"><code>
 dat <- as.matrix(read.table("../data/dat.txt"))
 y <- dat[,1]
 X <- dat[,-1]
