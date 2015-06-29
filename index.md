@@ -9,18 +9,18 @@ subtitle: "Bayesian Statistics / Computing"
 
 ##  [Switching to Markdown](/posts/markdown)
 ### It only takes a minute
-#### - June 24, 2015
+#### Posted on June 24, 2015
 ***
 
 ##   [Cucumber](/posts/cucumber)
 ###  A minimalist commenting system
-#### - May 20, 2014
+#### Posted on May 20, 2014
 ***
 
 ##   [Comparing Programming Languages for Statistics](/posts/langcompare)
 ###  R / Go / C / C++ / Scala / Julia?
-#### - May 13, 2015
+#### Posted on May 13, 2015
 ***
 
 ##   [Starting a Blog](/posts/startblog)
-#### - May 13, 2015
+#### Posted on May 13, 2015
