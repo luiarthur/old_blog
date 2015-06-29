@@ -97,3 +97,15 @@ screen below is what your page should look like for enabling Google
 authentication.
 <div><img class='eg'src='img/authLogin.png'></div>
 
+## Google App
+Last of all, to fill out the Google Client ID and Secret, you simply click on
+'Learn more' and follow the instructions under 'Configuring Your Application.
+The configuration should take no more than 5 minutes. It's a short section but
+each step is important.
+
+## Adding Cucumber Code
+Finally, all that is left to do is to put the right chunks of code in the right
+places. Refer to the [demo](demo) on my
+[Github](https://github.com/luiarthur/luiarthur.github.io/tree/master/posts/cucumber/demo).
+And in line 6 of '/js/cucumber.js', change 'luifireapp' to whatever you named
+your firebase app to be (e.g.  mycucumberapp).
