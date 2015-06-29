@@ -70,4 +70,8 @@ for (i in 1:100) {
     5 & 6 & 7 & 8 \\\\
   \end{array}
 \right)\\]
+
+## Here is an image
 ![example image](/img/briar.jpg)
+
+## [You can view the markdown file here](https://github.com/luiarthur/luiarthur.github.io/blob/master/posts/markdown/index.md)
