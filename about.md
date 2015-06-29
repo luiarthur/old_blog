@@ -2,7 +2,6 @@
 layout: post
 bannerimage: "/img/seaLions.jpg"
 title: About Me
-subtitle: History
 ---
 
 I grew up in Hong Kong and developed an interest for mathematics and a love
