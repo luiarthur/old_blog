@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Arthur Lui">
+    <meta name="google-site-verification" content="qoA8oXg7gCMdU_q6bQE3JmApfLun-VGJNGQjaSGPPWc" />
+    <title>luiarthur.github.io</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Inline Disqussions CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/inlineDisqussions.css" />
+    <!-- My CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css" />
+
+    <!--d3. Not necessary. Just for exploration.-->
+    <script src="/js/d3.min.js"></script>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+    <!--Inline Disqussion Chunks. Requires & must be AFTER jQuery. -->
+    <script src="/js/inlineDisqussions.js"></script>
+    <script src="/js/callInlineDisqussions.js"></script>
+    <!-- HTML File Inclusions-->
+    <script> 
+     $(function(){
+       $("#includeNav").load("/chunks/myNav.html"); 
+       $("#includeFooter").load("/chunks/myFooter.html"); 
+     });
+    </script> 
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div id="includeNav"></div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('/img/sc.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Arthur Lui</h1>
+                        <hr class="small">
+                        <span class="subheading">Bayesian Statistics / Computing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="/posts/markdown/index.html">
+                        <h2 class="post-title">
+                          Switching to Markdown
+                        </h2>
+                        <h3 class="post-subtitle">
+                          It only takes a minute
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="/about.html">Arthur Lui</a> 
+                    on June 24, 2015</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="/posts/cucumber/index.html">
+                        <h2 class="post-title">
+                          Cucumber
+                        </h2>
+                        <h3 class="post-subtitle">
+                          A minimalist Commenting System
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="/about.html">Arthur Lui</a> 
+                    on May 20, 2015</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="posts/langcompare/index.html">
+                        <h2 class="post-title">
+                            Searching for My Statistical Programming Language
+                        </h2>
+                        <h3 class="post-subtitle">
+                            R / Go / C / C++ / Scala / Julia?
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">Arthur Lui</a> 
+                    on May 13, 2015</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="posts/startblog/index.html">
+                        <h2 class="post-title">
+                            Starting a Blog
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">Arthur Lui</a> 
+                    on May 13, 2015</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <div id="endComments"> <div id="disqus_thread"></div> </div>
+    <footer>
+      <div id="includeFooter"></div>
+    </footer>
+
+</body>
+
+</html>

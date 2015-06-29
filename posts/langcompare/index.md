@@ -11,6 +11,13 @@ previoustitle: First Blog
 previousurl: /posts/startblog
 ---
 
+```R
+# HERE IS A TEST
+x <- rnorm(100)
+y <- rnorm(100)
+plot(x,y)
+```
+
 Having used R for 3 years in college, I've gotten to know the limits and
 conveniences of R. As a statistical package, with a large support community it
 serves its purpose well. However, at times, especially when doing more

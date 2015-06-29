@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Creating my first markdown page.">
+    <meta name="author" content="Arthur Lui">
+    <title>This is my markdown</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <!--link href="/css/font-awesome.min.css" rel="stylesheet"-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- My CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css" />
+
+    <!--MathJax-->
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!--d3. Not necessary. Just for exploration.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+    <!-- HTML File Inclusions-->
+    <!-- Cucumber. Needs jQuery. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.1/jquery.timeago.js"></script>
+    <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.elastic.source.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/cucumber.css">
+    <script> $(function(){$("#cucumber").load("/chunks/cucumber.html");}); </script> 
+
+    <!--other chunk inclusions-->
+    <script> 
+     $(function(){
+       $("#includeFooter").load("/chunks/myFooter.html"); 
+       $("#includeNav").load("/chunks/myNav.html"); 
+     });
+    </script> 
+
+    <!--highlight: For syntax code highlighting.-->
+    <link rel="stylesheet" href="/highlight/styles/default.css">
+    <script src="/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div id="includeNav"></div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" 
+      style=" background-image: url('');  
+             background-color:grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                          
+                            <h1>This is my markdown</h1>
+                          
+                            
+                            <hr class="small">
+                            <span class="subheading">Ya, it took 3 seconds.</span>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1>Test it</h1>
+
+<p><a href="http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html">Markdown Example</a></p>
+
+<hr>
+
+<h2>Brown Penny</h2>
+
+<blockquote>
+<p>I WHISPERED, &#39;I am too young,&#39;<br>
+And then, &#39;I am old enough&#39;;<br>
+Wherefore I threw a penny<br>
+To find out if I might love.<br>
+&#39;Go and love, go and love, young man,<br>
+If the lady be young and fair.&#39;<br>
+Ah, penny, brown penny, brown penny,<br>
+I am looped in the loops of her hair.<br>
+O love is the crooked thing,<br>
+There is nobody wise enough<br>
+To find out all that is in it,<br>
+For he would be thinking of love<br>
+Till the stars had run away<br>
+And the shadows eaten the moon.<br>
+Ah, penny, brown penny, brown penny,<br>
+One cannot begin it too soon.   </p>
+
+<p><em>William Butler Yeats</em></p>
+</blockquote>
+
+<h2>R code:</h2>
+
+<pre style="padding:0"><code class="R">
+library(someRandomLibrary)
+
+x <- 1:100
+y <- NULL
+
+for (i in 1:100) {
+  y[i] <- 5 + x*2 + rnorm(1)
+}
+</code></pre>
+
+<h2>Other Stuff:</h2>
+
+<ul>
+<li>latex syntax conversion
+
+<ol>
+<li>Greek letter: \( \alpha \)</li>
+<li>Inline math: \(X&#39;X^{-1}X&#39;y\)</li>
+<li>Display math: \[X&#39;X^{-1}X&#39;y\]</li>
+<li>regular letters in math mode: \((x-a)(x-b)... (x-z) = ?\)</li>
+</ol></li>
+<li>Styles:
+
+<ul>
+<li><em>Italics</em> <strong>bold</strong> <code>monospace</code> </li>
+</ul></li>
+</ul>
+
+<h2>Latex matrix</h2>
+
+<p>\[\left(
+  \begin{array}{rrrr}
+    1 &amp; 2 &amp; 3 &amp; 4 \\
+    5 &amp; 6 &amp; 7 &amp; 8 \\
+  \end{array}
+\right)\]</p>
+
+<h2>Here is an image</h2>
+
+<p><img src="/img/briar.jpg" alt="example image"></p>
+
+<h2><a href="https://github.com/luiarthur/luiarthur.github.io/blob/master/posts/markdown/index.md">You can view the markdown file here</a></h2>
+
+
+                <!--Comments-->
+                <div id="cucumber"></div>
+
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    <li class="previous">
+                      <a href='/posts/cucumber/index.html'>&larr;Cucumber</a>
+                    </li>
+                    
+
+                    
+                    <li class="next">
+                      <a href='/index.html'>&rarr;Home</a>
+                    </li>    
+                    
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div id="includeFooter"></div>
+    </footer>
+
+</body>
+
+</html>

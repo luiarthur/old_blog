@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Performance Comparison. Julia,R,C++,Scala,Go,C. Bayesian Statistics programming lanuage.">
+    <meta name="author" content="Arthur Lui">
+    <title>Program Comparisons</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/clean-blog.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Inline Disqussions CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/inlineDisqussions.css" />
+    <!-- My CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css" />
+
+    <!--d3. Not necessary. Just for exploration.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+    <!--Inline Disqussion Chunks. Requires & must be AFTER jQuery. -->
+    <script src="/js/inlineDisqussions.js"></script>
+    <script src="/js/callInlineDisqussions.js"></script>
+    <!-- HTML File Inclusions-->
+    <script> 
+     $(function(){
+       $("#includeFooter").load("/chunks/myFooter.html"); 
+       $("#includeNav").load("/chunks/myNav.html"); 
+     });
+    </script> 
+
+    <!--MathJax-->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div id="includeNav"></div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style=background-color:rgb(136,48,48);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>The Search for My Computational Programming Language</h1>
+                        <h2 class="subheading">Execution vs Development Time</h2>
+                        <!--<span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Having used R for 3 years in college, I've gotten to
+                    know the limits and conveniences of R. As a statistical
+                    package, with a large support community it serves its
+                    purpose well.  However, at times, especially when doing
+                    more computation-heavy analysis, R slows down, and reaches
+                    memory limits. Hence, I've been looking around for a
+                    language that is reasonalbly fast, and quick to develop.
+                    Conciseness means less room for coding error (kind of) and
+                    usually higher productivity.  I checked out C, C++, Go,
+                    Scala, and Julia. And since my computational work is
+                    usually Bayesian, I created my own criteria for judging
+                    performance &mdash; a standard Bayesian multiple linear
+                    regression algorithm.
+                    $$ y|\beta \sim Normal(X\beta,\sigma^2I) $$
+                    $$ \beta \sim Normal(0,100(X'X)^{-1}) $$
+                    $$ \sigma^2 \sim Gamma(1,1) $$
+                    The simulated data used for this study can be found at my 
+                    <a href="https://github.com/luiarthur/progSpeedCompare/blob/master/data/dat.txt" target="_blank">github</a>.
+                    </p>
+                    <p>
+                    So, I wasn't ever able to successfully implement this
+                    algorithm in C or Go. The linear algebra libraries were
+                    just a pain to grind through... But I did code up the
+                    algorithm in R, Julia, C++, and Scala. Ya, so I'm not a
+                    coding master. And there are sites like
+                    <a href="http://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=scala&lang2=gpp"
+                    target="_blank">computer language benchmark games </a>
+                    that do a more thourough job. But, it's sometimes nice to try
+                    things yourself!
+                    </p>
+                    <h2 class="section-heading">Results</h2>
+                    <p>
+                    From the plots below, we can see that Julia seems to be 
+                    fast and concise. So, I guess I'll spend more time with
+                    Julia? Totally depends. I definitely found some things that
+                    were non-intuitive. Loading libraries takes a while, but there
+                    are work-arounds that I want to blog about when I get to it. 
+                    </p>
+                    <p>
+                    I've included the code at the bottom of this page so you can 
+                    check out what I coded.
+                    </p>
+                    <!--<blockquote>blockquote.</blockquote>-->
+                    <p></p>
+                    <a href="/posts/langcompare/img/speed.svg">
+                        <img class="img-responsive" src="/posts/langcompare/img/speed.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">C++ wins in execution time.</span>
+                    <hr>
+                    <p></p>
+                    <a href="/posts/langcompare/img/lines.svg">
+                        <img class="img-responsive" src="/posts/langcompare/img/lines.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">R wins marginally in conciseness.</span>
+                    <hr>
+                    <p></p>
+                    <a href="/posts/langcompare/img/lines.svg">
+                        <img class="img-responsive" src="/posts/langcompare/img/vs.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">We want things to be in the bottom left quadrant &mdash;  Julia wins that one.</span>
+                    <hr>
+
+                    <!--Include Code-->
+                    <h2 class="section-heading">Sample Code</h2>
+                    <p></p>
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="r btn btn-default">R</button>
+                      <button type="button" class="j btn btn-default">Julia</button>
+                      <button type="button" class="s btn btn-default">Scala</button>
+                      <button type="button" class="c btn btn-default">C++</button>
+                    </div>
+                    <div id="includeChosenCode"></div>
+                    <hr>
+
+                    <!-- Pager -->
+                    <ul class="pager">
+                        <li class="previous">
+                            <a href="/posts/startblog/index.html">&larr; First Blog</a>
+                        </li>
+                        <li class="next">
+                            <a href="/posts/cucumber/index.html">Cucumber &rarr;</a>
+                        </li>
+                   </ul>
+
+                    <!--Comments at end of page Disqus-->
+                    <!--<hr> <div id="disqus_thread"></div> <hr>-->
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Footer -->
+    <div id="endComments"> <div id="disqus_thread"></div> </div>
+    <footer>
+      <div id="includeFooter"></div>
+    </footer>
+
+    <script> $(document).ready(function(){$("button.r").click(function(){$("#includeChosenCode").load("/posts/langcompare/Code/R.html");});});</script>
+    <script> $(document).ready(function(){$("button.j").click(function(){$("#includeChosenCode").load("/posts/langcompare/Code/julia.html");});});</script>
+    <script> $(document).ready(function(){$("button.s").click(function(){$("#includeChosenCode").load("/posts/langcompare/Code/scala.html");});});</script>
+    <script> $(document).ready(function(){$("button.c").click(function(){$("#includeChosenCode").load("/posts/langcompare/Code/cpp.html");});});</script>
+</body>
+
+</html>
