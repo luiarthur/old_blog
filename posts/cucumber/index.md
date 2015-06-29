@@ -50,7 +50,7 @@ set of rules, you can allow authenticated users to write comments, and edit
 their own comments, and prevent users from editing other users' comments. The
 set of rules I used are:
 
-~~~
+<pre style="padding:0"><code>
 {
   "rules": {
     ".read": true,
@@ -81,7 +81,7 @@ set of rules I used are:
     }
   }
 }
-~~~
+</code></pre>
 
 To add rules, just navigate to "Security and Rules" tab, on your app, and paste
 the rules. My rules allow the world to view comments, but only authenticated
