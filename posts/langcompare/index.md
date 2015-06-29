@@ -25,3 +25,12 @@ performance — a standard Bayesian multiple linear regression algorithm.
      \beta & \sim & Normal(0,100(X'X)^{-1}) \\\\
   \sigma^2 & \sim & Gamma(1,1) \\\\
 \end{array}\\]
+
+The simulated data used for this study can be found at my
+[github](https://github.com/luiarthur/progSpeedCompare/blob/master/data/dat.txt).
+
+So, I wasn't ever able to successfully implement this algorithm in C or Go. The
+linear algebra libraries were just a pain to grind through... But I did code up
+the algorithm in R, Julia, C++, and Scala. Ya, so I'm not a coding master. And
+there are sites like computer language benchmark games that do a more thourough
+job. But, it's sometimes nice to try things yourself!
