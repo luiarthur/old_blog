@@ -58,4 +58,15 @@ coded.
 ***
 
 ## Sample Code
+                    <div class="btn-group" role="group" aria-label="...">
+                      <button type="button" class="r btn btn-default">R</button>
+                      <button type="button" class="j btn btn-default">Julia</button>
+                      <button type="button" class="s btn btn-default">Scala</button>
+                      <button type="button" class="c btn btn-default">C++</button>
+                    </div>
+                    <div id="includeChosenCode"></div>
 
+<script> $(document).ready(function(){$("button.r").click(function(){$("#includeChosenCode").load("Code/R.html");});});</script>
+<script> $(document).ready(function(){$("button.j").click(function(){$("#includeChosenCode").load("Code/julia.html");});});</script>
+<script> $(document).ready(function(){$("button.s").click(function(){$("#includeChosenCode").load("Code/scala.html");});});</script>
+<script> $(document).ready(function(){$("button.c").click(function(){$("#includeChosenCode").load("Code/cpp.html");});});</script>
