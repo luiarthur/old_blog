@@ -28,9 +28,9 @@ function onLogoutClick(e) {
 }
 
 ref.onAuth(function(authData) {
-var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'   src='/logos/github.png'>"+
-            "<img id='googleLogin' href='#' onclick='onLoginClick(\"google\")'   src='/logos/google.png'>"+ 
-            "<img id='fbLogin'     href='#' onclick='onLoginClick(\"facebook\")' src='/logos/fb.png'>";
+var login = "<img id='githubLogin' href='#' onclick='onLoginClick(\"github\")'   src='logos/github.png'>"+
+            "<img id='googleLogin' href='#' onclick='onLoginClick(\"google\")'   src='logos/google.png'>"+ 
+            "<img id='fbLogin'     href='#' onclick='onLoginClick(\"facebook\")' src='logos/fb.png'>";
 var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>";
 
   if (authData) {
@@ -61,7 +61,7 @@ var logout = "<a href='#' onclick='onLogoutClick(event)' id='logout'>logout</a>"
     $("#logIO").text("").append(login);
     myName=null;
     myUserID=null;
-    myPicture="/img/man.jpg";
+    myPicture="img/man.jpg";
     $("#userPic").attr("src",myPicture);
     $("#newComment").attr("placeholder","Please login to comment...");
   }
