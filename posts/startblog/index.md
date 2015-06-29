@@ -3,7 +3,7 @@ layout: post
 title: My First Blog
 description: Creating my first blog
 bannercolor: "rgb(136,48,48)"
-nexturl: /posts/langcompare
+nexturl: "/posts/langcompare"
 nexttitle: Language Comparison
 ---
 
