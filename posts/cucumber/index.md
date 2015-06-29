@@ -50,7 +50,38 @@ set of rules, you can allow authenticated users to write comments, and edit
 their own comments, and prevent users from editing other users' comments. The
 set of rules I used are:
 
-<div id="cucumberRules"></div>
+~~~
+{
+  "rules": {
+    ".read": true,
+    "comments": {
+      "$slug" :{
+        "$commentID": {
+          //".write": "auth != null && !data.exists()",
+          ".write": "auth != null && 
+            (!data.exists() || ((data.child('userid').val()) === auth.uid))",
+          ".validate": "newData.hasChildren(['userid', 'name', 'body'])",
+        	"body": {
+        	  ".validate":"newData.isString()"
+        	},
+        	"userid": {
+            ".validate":"(newData.val() == auth.uid)"
+        	},
+        	"name": {
+        	  ".validate": "newData.isString()"
+        	},
+        	"picture": { //url to profile picture
+        	  ".validate": "newData.isString()"
+        	},
+        	"time": {
+        	  ".validate": "newData.isString()"
+        	}
+        }
+      }
+    }
+  }
+}
+~~~
 
 To add rules, just navigate to "Security and Rules" tab, on your app, and paste
 the rules. My rules allow the world to view comments, but only authenticated
@@ -58,5 +89,4 @@ users can write comments. Furthermore, you can only edit and remove your own
 comments.
 <div><img class="eg" src="img/rules.png"></div>
 
-<script>$(document).ready(function(){$("#cucumberRules").load("cucumberRules.html");});</script>
 
