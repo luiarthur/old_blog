@@ -21,3 +21,9 @@ h4 {
   font-weight: 300;
   margin-top: 0;
 }
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+
