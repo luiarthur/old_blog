@@ -49,14 +49,10 @@ coded.
 <span class="caption text-muted">C++ wins in execution time.</span>
 ***
 
-<a href="/posts/langcompare/img/lines.svg">
-    <img class="img-responsive" src="/posts/langcompare/img/lines.svg" alt="">
-</a>
+![Conciseness Comparison](/posts/langcompare/img/lines.svg)
 <span class="caption text-muted">R wins marginally in conciseness.</span>
 ***
 
-<a href="/posts/langcompare/img/lines.svg">
-    <img class="img-responsive" src="/posts/langcompare/img/vs.svg" alt="">
-</a>
+![Overall Comparison](/posts/langcompare/img/vs.svg)
 <span class="caption text-muted">We want things to be in the bottom left quadrant &mdash;  Julia wins that one.</span>
 ***
