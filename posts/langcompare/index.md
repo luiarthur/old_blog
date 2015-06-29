@@ -32,5 +32,6 @@ The simulated data used for this study can be found at my
 So, I wasn't ever able to successfully implement this algorithm in C or Go. The
 linear algebra libraries were just a pain to grind through... But I did code up
 the algorithm in R, Julia, C++, and Scala. Ya, so I'm not a coding master. And
-there are sites like computer language benchmark games that do a more thourough
-job. But, it's sometimes nice to try things yourself!
+there are sites like [computer language benchmark
+games](http://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=scala&lang2=gpp)
+that do a more thourough job. But, it's sometimes nice to try things yourself!
