@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TEMPComparing Programming Languages for Statistics
+title: Comparing Programming Languages for Statistics
 titlesize: 2
 subtitle: "Execution vs. Development Time"
 description: "C / C++ / Go / Scala / Julia / R execution time vs. development time"
