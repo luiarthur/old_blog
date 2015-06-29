@@ -1,7 +1,7 @@
 ---
 layout: temperature
-title: aibp test5
-alpha: "1"
+title: aibp test8
+alpha: 1
 sigma: "(1,2,3,4)"
 D: "\\left( \\begin{array}{rrrr}
       0.0 & 1.1 & 1.2 & 1.3 \\\\
@@ -12,11 +12,7 @@ D: "\\left( \\begin{array}{rrrr}
 image:
 ---
 
-<div id="mlPlot""></div>
-
-***
-
 <!-- Javascript: -->
 <script type="text/javascript">
-  draw("demoDat.tsv","tau","#mlPlot");
+  draw("demoDat.tsv","tau","#multilinePlot");
 </script>

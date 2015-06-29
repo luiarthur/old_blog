@@ -7,7 +7,7 @@ function draw(filename,xcol,div,xlo,xhi,ylo,yhi) {
   if (div === undefined) {
     div = "body";
   } else {
-    width = d3.select(div).node().getBoundingClientRect().width * .8;
+    width = d3.select(div).node().getBoundingClientRect().width * .85;
     height = width/2;
   }
    
