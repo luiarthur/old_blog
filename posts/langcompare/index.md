@@ -35,3 +35,12 @@ the algorithm in R, Julia, C++, and Scala. Ya, so I'm not a coding master. And
 there are sites like [computer language benchmark
 games](http://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=scala&lang2=gpp)
 that do a more thourough job. But, it's sometimes nice to try things yourself!
+
+## Results
+From the plots below, we can see that Julia seems to be fast and concise. So, I
+guess I'll spend more time with Julia? Totally depends. I definitely found some
+things that were non-intuitive. Loading libraries takes a while, but there are
+work-arounds that I want to blog about when I get to it.
+
+I've included the code at the bottom of this page so you can check out what I
+coded.
