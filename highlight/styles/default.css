@@ -135,3 +135,7 @@
   color: inherit;
   text-decoration: underline;
 }
+
+.hljs .lineno * {
+  color: #009999;
+}
