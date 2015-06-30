@@ -41,7 +41,7 @@ image:
 
 ## R code: 
 
-<pre style="padding:0"><code class="R">
+{% highlight R linenos %}
 library(someRandomLibrary)
 
 x <- 1:100
@@ -50,7 +50,7 @@ y <- NULL
 for (i in 1:100) {
   y[i] <- 5 + x*2 + rnorm(1)
 }
-</code></pre>
+{% endhighlight %}
 
 
 ## Other Stuff:

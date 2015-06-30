@@ -81,6 +81,7 @@
 .hljs-typename,
 .hljs-winutils {
   color: #fcc28c;
+  font-weight: bold; /*arthur*/
 }
 
 .hljs-comment,
@@ -136,6 +137,15 @@
   text-decoration: underline;
 }
 
+/* ALL BELOW: arthur*/
 .hljs .lineno * {
-  color: #009999;
+  /*color: #009999;*/
+  color: #CC6600;
+  padding-right: 16px;
+}
+.hljs .o {
+  color: #66B2FF;
+}
+pre {
+  padding: 0;
 }
